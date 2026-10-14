@@ -8,6 +8,9 @@ which empties its Upload dialog); what the game loads is the release folder `too
 `docs/superpowers/specs/2026-10-14-v4-simplification-addendum.md`** (Eric's 2026-10-14 ruling: day-one inputs, observed stage order with the rank block, whole numbers; no sampling policy, no fixture gate), and the plan
 `docs/superpowers/plans/2026-10-13-historical-starting-infamy.md` (Tasks 10–13 superseded by the addendum). The execution ledger with every ruling is
 `.superpowers/sdd/2026-10-13-historical-starting-infamy/progress.md` (local, not committed). v0.1.0 was merged to `main` on 2026-10-14 (branch `build/v1` deleted); new work starts a new branch from `main`.
+**Public since 2026-10-14:** https://github.com/stone-ericm/historical_starting_infamy (history squashed to one commit at publication; the
+pre-squash history is the local branch `history/pre-squash-2026-10-14`, never pushed). Commits on this repository are in Eric's voice with no
+AI attribution trailers (his rule for public GitHub posts). The Steam Workshop item is 3819895927.
 
 ## Commands
 
