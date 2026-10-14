@@ -1,0 +1,6 @@
+﻿hsi_probe_state_pop = { value = state_population }
+hsi_probe_state_gdp = { value = gdp }
+hsi_probe_gen = { value = modifier:country_infamy_generation_mult }
+hsi_probe_unrec = { value = modifier:country_infamy_generation_against_unrecognized_mult }
+hsi_probe_decay = { value = modifier:country_infamy_decay_mult }
+hsi_probe_infamy = { value = infamy }

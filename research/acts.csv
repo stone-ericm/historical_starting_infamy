@@ -1,0 +1,21 @@
+act_id,title,start_date,end_date,source,notes
+egy_syria_1831,Egyptian conquest of Ottoman Syria,1831-11-01,1833-05-14,kutahya,"Ibrahim Pasha's army entered Palestine in late October 1831 and besieged Acre from November; the Convention of Kutahya (May 1833) left Syria, Palestine and Adana to Egypt."
+egy_sudan_1820,Egyptian conquest of the Sudan,1820-10-01,1821-08-31,turco_egyptian_sudan,"Ismail Pasha's expedition left in October 1820; Dongola submitted by November 1820, Sennar fell in June 1821, Kordofan after the battle of Bara in August 1821."
+bol_peru_1835,Bolivian intervention in Peru,1835-06-15,1836-10-28,peru_bolivian_confederation,"Santa Cruz entered Peru in June 1835; the Confederation was proclaimed on 28 October 1836. Computed, never emitted: vanilla sets Bolivia to 50."
+rus_persia_1826,Russo-Persian War,1826-07-28,1828-02-22,turkmenchay,Persia attacked in July 1826; Russia added the territorial demands and took the Erivan and Nakhchivan khanates at Turkmenchay.
+rus_ottoman_1828,Russo-Turkish War,1828-04-26,1829-09-14,adrianople,Russia declared war in April 1828; Adrianople gave Russia the Danube delta. The protectorate over Moldavia and Wallachia is not a Vic3 subject transfer (they remain Ottoman subjects in 1836) and is not modelled.
+bic_burma_1824,First Anglo-Burmese War,1824-03-05,1826-02-24,yandabo,"Fought by the East India Company (BIC); Yandabo ceded Arakan, Tenasserim and Burmese Assam."
+greece_backers_1827,Great-power backing of Greek independence,1827-07-06,1830-02-03,greek_independence,Treaty of London (6 July 1827) to the London Protocol (3 February 1830); one liberate_country goal per backer.
+fra_algiers_1830,French conquest of the Regency of Algiers,1830-06-14,1832-03-27,algiers_1830,"Landing at Sidi Ferruch 14 June 1830; Algiers 5 July 1830, Oran 4 January 1831, Bone 27 March 1832. The Regency has no 1836 tag."
+belgium_backers_1830,Great-power backing of Belgian independence,1830-12-20,,belgian_revolution,"London Protocol of 20 December 1830 recognised Belgian independence; the Netherlands accepted only in 1839, so the goal is pending on 1836-01-01."
+net_belgium_1831,Ten Days' Campaign,1831-08-02,1831-08-12,ten_days_campaign,"Dutch attempt to retake Belgium, abandoned under French intervention."
+pan_peshawar_1834,Sikh annexation of Peshawar,1834-05-01,1834-05-06,peshawar_1834,Hari Singh Nalwa took Peshawar from the Barakzai sardars; formal annexation 6 May 1834.
+pan_ladakh_1834,Dogra invasion of Ladakh,1834-08-01,,ladakh_1834,"Zorawar Singh's campaign (August 1834 to October 1835) under Ranjit Singh's vassal Gulab Singh; Ladakh is still independent in vanilla 1836, so the goal is pending."
+dai_cambodia_1833,Vietnamese takeover of Cambodia,1833-11-23,1834-12-31,tay_thanh,Siamese invasion repelled by April 1834; Minh Mang placed Cambodia under direct rule as Tay Thanh in late 1834. Cambodia is a Vietnamese vassal in vanilla 1836.
+sia_cambodia_1833,Siamese invasion of Cambodia,1833-11-23,1834-04-30,siam_vietnam_1833,Bodindecha's invasion failed; Siamese forces withdrew by April 1834.
+sia_vientiane_1827,Siamese destruction of Vientiane,1827-01-15,1828-10-31,lao_rebellion,Anouvong's advance in January 1827; Vientiane taken in 1827 and razed in 1828; the kingdom was annexed.
+sia_kedah_1821,Siamese invasion of Kedah,1821-11-12,1821-11-18,kedah_1821,The governor of Ligor invaded on 12 November 1821 and took Kedah fort on the 18th.
+hai_santo_domingo_1822,Haitian occupation of Santo Domingo,1822-01-15,1822-02-09,hispaniola_1822,Boyer's army entered Santo Domingo on 9 February 1822.
+spa_mexico_1829,Barradas expedition,1829-07-27,1829-09-11,barradas,Spanish landing at Tampico 27 July 1829; capitulation 11 September 1829.
+per_herat_1833,Persian siege of Herat,1833-07-01,1833-11-30,herat_1833,Abbas Mirza's campaign from summer 1833; the siege was lifted in November 1833 after his death with only nominal suzerainty acknowledged.
+mad_radama_1817,Merina conquests under Radama I,1817-06-01,1824-12-31,radama_i,East coast submitted in 1817; the west was reduced by 1824.

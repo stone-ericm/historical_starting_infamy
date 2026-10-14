@@ -1,0 +1,14 @@
+{
+  "name": "HSI Probe",
+  "id": "",
+  "version": "0.0.2",
+  "supported_game_version": "1.14.*",
+  "short_description": "Throwaway measurement probe for Historical Starting Infamy. Do not ship.",
+  "tags": [
+    "Utilities"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": false
+  }
+}

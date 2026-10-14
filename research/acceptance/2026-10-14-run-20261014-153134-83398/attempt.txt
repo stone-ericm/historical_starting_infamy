@@ -1,0 +1,10 @@
+run_id: 20261014-153134-83398
+receipt: /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy/research/measurement/.run/20261014-153134-83398-84543
+collected: 2026-10-14 15:35:15 EDT
+logs:
+  debug.1.log
+  debug.log
+  error.1.log
+  error.log
+  game.log
+  system.log

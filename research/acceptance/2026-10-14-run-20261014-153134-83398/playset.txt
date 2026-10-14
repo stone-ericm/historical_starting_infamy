@@ -1,0 +1,1 @@
+{"enabledMods":[{"path":"/Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy"}],"disabledDLC":[],"enabledUGC":[]}

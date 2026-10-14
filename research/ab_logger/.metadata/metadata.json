@@ -1,0 +1,10 @@
+{
+  "name": "HSI A/B logger",
+  "id": "",
+  "version": "0.0.1",
+  "supported_game_version": "1.14.*",
+  "short_description": "Test-only: logs every diplomatic play start for the Historical Starting Infamy A/B run. Never shipped.",
+  "tags": ["Utilities"],
+  "relationships": [],
+  "game_custom_data": { "multiplayer_synchronized": false }
+}

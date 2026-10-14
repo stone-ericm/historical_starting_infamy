@@ -1,0 +1,7 @@
+handoff: 2026-10-13 16:59:48 EDT
+accepted: 2026-10-13 17:11:26 EDT
+marker: HSI-R1-a956ed1d
+reviewed spec commit: 202905f (spec content 09b641a)
+model: GPT-6.1-Sol xhigh (Codex CLI 0.162.1, herdr 0.9.4), memories off
+a956ed1dc86123e7b38f74553499b1aedfdc186f3a2fc53c088099ae5668d7ef  /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy/docs/reviews/2026-10-13-spec-review-r1/codex-findings-r1.md
+e605d15b036a4620eab8b94f31f23846e7815705e77bdecea74818e8681cf22c  /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy/docs/reviews/2026-10-13-spec-review-r1/prompt-r1.md

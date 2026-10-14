@@ -1,0 +1,6 @@
+goal_id,component_id,state_key,slices_1836,owner_type,standing,aggressor_homeland,shared_language,claim,scripted_unification,adjacent,interest_tier,justification
+g_aleppo,c1,STATE_ALEPPO,EGY,recognized,homeland,0,1,0,0,1,3,fixture
+g_syria,c1,STATE_SYRIA,EGY,recognized,incorporated,0,1,0,0,1,3,fixture
+g_greece,c1,STATE_ATTICA,GRE,recognized,incorporated,0,0,0,0,0,3,fixture
+g_greece,c2,STATE_PELOPONNESE,GRE,recognized,incorporated,0,0,0,0,0,3,fixture
+g_pending,c1,STATE_HEDJAZ,HDJ,unrecognized,capital,0,1,0,0,1,3,fixture

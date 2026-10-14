@@ -1,0 +1,112 @@
+{
+ "holder": "FRA",
+ "rule": "very_low",
+ "general_mult_estimate": -0.05,
+ "notes": "Static eligibility and pop-only value estimates come from research/scripts/capture_audit.py (its docstring lists what is verified, what stays unverified until the keyboard, and the estimate proxies); the boot confirms. France's era-1 technologies include Colonization (-0.1 infamy against unrecognized countries), applied to unrecognized targets in the estimates.",
+ "captures": [
+  {
+   "id": "A",
+   "role": "above_floor_with_severity",
+   "wargoal": "make_protectorate",
+   "why": "severity line (x0.50), general modifier and rule lines, total well above the floor",
+   "candidates": [
+    {
+     "target": "MAS",
+     "adjacent": true,
+     "note": "Mascara: unrecognized, two slices France borders by land, in the region where France owns states"
+    },
+    {
+     "target": "MOR",
+     "adjacent": false,
+     "note": "Morocco: unrecognized, four states; interest via France's North African states"
+    },
+    {
+     "target": "CON",
+     "adjacent": true,
+     "note": "Constantine: unrecognized, one slice next to France's Bone slice"
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "role": "factor_line",
+   "wargoal": "conquer_state",
+   "why": "at least one aggressor factor line (adjacency) on the state entry; no severity line",
+   "candidates": [
+    {
+     "target": "MAS",
+     "state": "STATE_ALGIERS",
+     "adjacent": true,
+     "note": "France's own Algiers slice borders it; relations -50"
+    },
+    {
+     "target": "BEL",
+     "state": "STATE_FLANDERS",
+     "adjacent": true,
+     "note": "borders French Flanders; relations -1; same strategic region as Paris"
+    }
+   ]
+  },
+  {
+   "id": "Cmin",
+   "role": "clamp_min",
+   "wargoal": "regime_change",
+   "why": "raw x0.1 below the minimum 3 so the 'Minimum of 3' line appears",
+   "candidates": [
+    {
+     "target": "LUC",
+     "note": "Lucca, one slice of Emilia, about 108k people"
+    },
+    {
+     "target": "PAR",
+     "note": "Parma, about 472k"
+    },
+    {
+     "target": "MOD",
+     "note": "Modena, about 648k"
+    }
+   ]
+  },
+  {
+   "id": "Cmax",
+   "role": "clamp_max",
+   "wargoal": "regime_change",
+   "why": "raw x0.1 above the maximum 10 so the 'Maximum of 10' line appears",
+   "candidates": [
+    {
+     "target": "AUS",
+     "note": "fifteen states"
+    },
+    {
+     "target": "PRU",
+     "note": "thirteen states; relations -20; complete fixture records kept (Russia was dropped as a fallback: 73 slices)"
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "role": "floor_binds_under_rule",
+   "wargoal": "liberate_country",
+   "optional": true,
+   "why": "Standard-equivalent value between 1 and 2 so the final floor binds only under Very Low (discriminates floor-before-rule from floor-after-rule). liberate_country needs an active secession movement with 10% support and activism (00_defines.txt WAR_GOAL_LIBERATE_COUNTRY_MIN_POPULAR_SUPPORT), which cannot be checked statically; conquer_state cannot reach the range for France (per-state floor 1, no claims). Capture it only if the game offers the goal; the ordering gate decides afterwards whether the floor's position matters on the ledger domain.",
+   "candidates": [
+    {
+     "target": "GBR",
+     "release": "WLS",
+     "note": "Wales, one state; relations -20"
+    },
+    {
+     "target": "RUS",
+     "release": "LIT",
+     "note": "two states; relations 0"
+    },
+    {
+     "target": "PRU",
+     "release": "POL",
+     "note": "Posen, West Prussia and Upper Silesia from Prussia; relations -20; the sum may exceed the range"
+    }
+   ]
+  }
+ ],
+ "unrec_mult_estimate": -0.1
+}

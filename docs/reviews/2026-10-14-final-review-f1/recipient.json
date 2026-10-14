@@ -1,0 +1,13 @@
+{
+  "host": "local (Mac, herdr 0.9.4 client+server after a server restart during the afternoon)",
+  "pane_id": "wH:p5",
+  "tab_id": "wH:t4",
+  "terminal_id": "term_65dd20b6f84011a",
+  "kind": "codex",
+  "name": "hsi-codex-final",
+  "agent_session": {"kind": "id", "value": "01a13beb-116f-7060-9039-395f347745fe", "source": "herdr:codex"},
+  "argv": ["codex", "--no-daemon", "-c", "memories.use_memories=false", "-c", "memories.generate_memories=false"],
+  "model_footer": "GPT-6.1-Sol xhigh fast (Codex CLI 0.162.1)",
+  "fresh": "a NEW session; the three pre-boot rounds ran in hsi-codex-code (session 01a13b30…), quit and its tab closed before this binding",
+  "reviewed_commit": "13e4d46 (build/v1), main 8a20fe2"
+}

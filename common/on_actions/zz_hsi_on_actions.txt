@@ -1,0 +1,11 @@
+﻿# Historical Starting Infamy: additive registration on the after-lobby hook (spec section 8).
+# on_game_started fires while players are still in the lobby, before the game rules are final;
+# vanilla reads has_game_rule only in on_game_started_after_lobby.
+on_game_started_after_lobby = {
+	on_actions = { hsi_on_game_started }
+}
+hsi_on_game_started = {
+	effect = {
+		hsi_apply_starting_infamy = yes
+	}
+}

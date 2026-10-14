@@ -1,0 +1,5 @@
+goal_id,act_id,wargoal,holder,holder_tag_1836,holder_type,target,stakeholder,victim_tag_1836,claim_date,resolution,resolution_date,loyal_subject,rebellious_subject,general_mult_source,notes
+g_aleppo,test_syria,conquer_state,EGY,EGY,unrecognized,TUR,,TUR,1831-10-01,enforced,1833-05-01,0,0,measured_1836,fixture
+g_syria,test_syria,conquer_state,EGY,EGY,unrecognized,TUR,,TUR,1831-10-01,enforced,1833-05-01,0,0,measured_1836,fixture
+g_greece,test_greece,liberate_country,GBR,GBR,recognized,TUR,,TUR,1827-07-01,enforced,1830-02-01,0,0,measured_1836,fixture
+g_pending,test_syria,make_protectorate,EGY,EGY,unrecognized,HDJ,TUR,,1835-11-01,pending,,0,0,measured_1836,fixture pending goal

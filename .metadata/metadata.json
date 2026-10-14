@@ -1,0 +1,15 @@
+{
+  "name": "Historical Starting Infamy",
+  "id": "3819895927",
+  "version": "0.1.0",
+  "supported_game_version": "1.14.*",
+  "short_description": "Estimated starting infamy for 1836 from a ledger of 1816-1835 acts, priced with the game's own formula and decayed to 1836. Egypt and Punjab start with infamy; Bolivia keeps its vanilla 50.",
+  "tags": [
+    "Historical",
+    "Balance"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

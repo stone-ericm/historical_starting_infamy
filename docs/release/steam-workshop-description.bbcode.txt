@@ -1,0 +1,20 @@
+Note: This mod was written completely by AI.
+
+This is a small mod that adds infamy to 2 or 3 countries (depending on Infamy settings) at vanilla game start to reflect historical acts as Victoria 3 would have priced them.
+
+[h2]Starting infamy by game rule[/h2]
+[table]
+[tr][th]Country[/th][th]Very Low[/th][th]Low[/th][th]Standard[/th][th]High[/th][th]Very High[/th][/tr]
+[tr][td]Egypt[/td][td]16[/td][td]35[/td][td]54[/td][td]72[/td][td]91[/td][/tr]
+[tr][td]Punjab (Khalsa Raj)[/td][td]1[/td][td]6[/td][td]11[/td][td]16[/td][td]21[/td][/tr]
+[tr][td]France[/td][td]0[/td][td]0[/td][td]0[/td][td]0[/td][td]1[/td][/tr]
+[/table]
+Bolivia keeps its vanilla 50. Everyone else is at 0: their 1816–1835 acts had decayed away by 1836 at the game's 5 per year.
+
+[h2]Where the numbers come from[/h2]
+Twenty acts (Egypt in Sudan and Syria, the Sikhs at Peshawar and Ladakh, Greek and Belgian independence and their backers, the French in Algiers, the Russo-Persian and Russo-Turkish wars, the First Anglo-Burmese War, Siam and Vietnam in Cambodia, Persia at Herat, Haiti in Santo Domingo, and others) were each mapped to the war goal they correspond to and priced with the 1.14.5 infamy formula, using the game's own day-one 1836 population and GDP shares, modifiers and country ranks. The formula was checked against the engine with a probe mod (1,754 state values reproduced). Each charge is dated at the start of its war, refunded or reduced the way the game does it, decayed to 1 January 1836, and rounded to a whole number.
+
+This is only a defensible estimate, not a simulation.
+
+[h2]Technical[/h2]
+Two script files, nothing overwritten. Runs once per new campaign (on_game_started_after_lobby, guarded by a global variable), respects the Infamy Generation game rule, does nothing on an existing save. Victoria 3 1.14.5, vanilla. Not tested in multiplayer.

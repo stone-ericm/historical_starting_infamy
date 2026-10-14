@@ -1,0 +1,13 @@
+{
+  "host": "local (Mac, herdr 0.9.4 client+server, socket /Users/eric/.config/herdr/herdr.sock)",
+  "pane_id": "wH:p2",
+  "tab_id": "wH:t2",
+  "terminal_id": "term_65dcf32970a081a",
+  "kind": "codex",
+  "name": "hsi-codex-code",
+  "agent_session": {"kind": "id", "value": "01a13b30-d442-72c0-9787-4eb856700355", "source": "herdr:codex"},
+  "argv": ["codex", "--no-daemon", "-c", "memories.use_memories=false", "-c", "memories.generate_memories=false"],
+  "model_footer": "GPT-6.1-Sol xhigh fast (Codex CLI 0.162.1)",
+  "bound_at": "2026-10-14 (READY bootstrap returned done)",
+  "reviewed_commit": "dfed034 (build/v1), main 8a20fe2"
+}

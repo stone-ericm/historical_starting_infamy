@@ -1,0 +1,7 @@
+.codex-review/
+__pycache__/
+.pytest_cache/
+.DS_Store
+research/measurement/.run/
+research/measurement/*/saves/
+research/acceptance/*/saves/

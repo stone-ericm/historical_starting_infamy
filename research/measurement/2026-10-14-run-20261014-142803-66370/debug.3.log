@@ -1,0 +1,925 @@
+[14:28:04][pdx_steam.cpp:192]: Failed to initialize Steam so skipping getting of Steam-specific command line parameters
+[14:28:04][virtualfilesystem_physfs.cpp:460]: Mounted Data: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/clausewitz
+[14:28:04][virtualfilesystem_physfs.cpp:460]: Mounted Data: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/jomini
+[14:28:04][virtualfilesystem_physfs.cpp:460]: Mounted Data: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/platform_specific_game_data
+[14:28:04][virtualfilesystem_physfs.cpp:460]: Mounted Data: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/game
+[14:28:04][jomini_game_setup.cpp:134]: Log system initialized.
+[14:28:04][pdx_task.cpp:87]: Spawning 11 normal worker threads
+[14:28:04][pdx_task.cpp:88]: Spawning 5 below normal worker threads
+[14:28:04][systemsettings.cpp:332]: "default_settings_v1_file" is not defined in path.settings. Default "pdx_default_settings.json" will be used.
+[14:28:04][systemsettings.cpp:332]: "settings_v1_file" is not defined in path.settings. Default "pdx_settings.json" will be used.
+[14:28:05][defines.cpp:230]: Define 'MIN_COMBAT_UNITS_FOR_MULTIPLE_COMMANDERS_ABSOLUTE' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'MIN_COMBAT_UNITS_FOR_MULTIPLE_COMMANDERS_RELATIVE' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'RETIRE_COMMANDER_INTERACTION_KEY' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'COMMANDER_DESIRED_RANK_DISPARITY_IN_ARMY' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'COMMANDER_DESIRED_RANK_DISPARITY_IN_FLEET' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'name' defined in 'common/defines/00_audio_persistent_objects.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'scope' defined in 'common/defines/00_audio_persistent_objects.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'CIVIL_WAR_UPRISING_STATE_EXCESSIVE_ARMY_FRACTION' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'BUILDING_MAX_PROFIT_TO_PAUSE_HIRES' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'WORLD_MARKET_MONOPOLY_MIN_SHARE' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'HIGH_POP_THRESHOLD' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'ROLE_RULER' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'ROLE_HEIR' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_POWERFUL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_INFLUENTIAL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_MARGINAL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:05][defines.cpp:230]: Define 'FLAGSHIP_DECORATION_LOCATOR' defined in 'common/defines/00_graphics.txt' not specified. Maybe a define macro is missing
+[14:28:05][main.cpp:564]: Total startup duration: 1.34997425 seconds
+[14:28:05][pdx_account.cpp:600]: Starting up PDX SDK
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "device" setting in "Graphics" category.
+[14:28:05][gfx_vk_master_context.cpp:718]: Instance ApiVersion: 1.3.296
+[14:28:05][gfx_vk_master_context.cpp:723]: Instance extensions:
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_device_group_creation
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_external_fence_capabilities
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_external_memory_capabilities
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_external_semaphore_capabilities
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_get_physical_device_properties2
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_get_surface_capabilities2
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_surface
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_debug_report
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_debug_utils
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_headless_surface
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_layer_settings
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_metal_surface
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_surface_maintenance1
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_EXT_swapchain_colorspace
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_MVK_macos_surface
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_KHR_portability_enumeration
+[14:28:05][gfx_vk_master_context.cpp:726]: 	VK_LUNARG_direct_driver_loading
+[14:28:05][gfx_vk_master_context.cpp:729]: Instance layers:
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][gfx_vk_master_context.cpp:887]: Adapter #0:
+[14:28:05][gfx_vk_master_context.cpp:380]: 	API Version: 1.2.296
+[14:28:05][gfx_vk_master_context.cpp:382]: 	Driver Version: 0.2.2019 (10211)
+[14:28:05][gfx_vk_master_context.cpp:384]: 	Vendor: Apple (4203)
+[14:28:05][gfx_vk_master_context.cpp:386]: 	Device Type: IntegratedGpu
+[14:28:05][gfx_vk_master_context.cpp:387]: 	Device Name: Apple M4 Pro
+[14:28:05][gfx_vk_master_context.cpp:388]: 	Device ID: 453116425
+[14:28:05][gfx_vk_master_context.cpp:395]: 	Driver ID: Moltenvk
+[14:28:05][gfx_vk_master_context.cpp:396]: 	Driver Name: MoltenVK
+[14:28:05][gfx_vk_master_context.cpp:397]: 	Driver Info: 1.2.11
+[14:28:05][gfx_vk_master_context.cpp:915]: Selected device: Apple M4 Pro
+[14:28:05][gfx_vk_master_context.cpp:931]: Device extensions:
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_16bit_storage
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_8bit_storage
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_bind_memory2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_buffer_device_address
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_calibrated_timestamps
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_copy_commands2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_create_renderpass2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_dedicated_allocation
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_deferred_host_operations
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_depth_stencil_resolve
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_descriptor_update_template
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_device_group
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_driver_properties
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_dynamic_rendering
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_external_fence
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_external_memory
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_external_semaphore
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_fragment_shader_barycentric
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_format_feature_flags2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_get_memory_requirements2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_imageless_framebuffer
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_image_format_list
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_incremental_present
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_maintenance1
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_maintenance2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_maintenance3
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_map_memory2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_multiview
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_portability_subset
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_push_descriptor
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_relaxed_block_layout
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_sampler_mirror_clamp_to_edge
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_sampler_ycbcr_conversion
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_separate_depth_stencil_layouts
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_draw_parameters
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_float_controls
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_float16_int8
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_integer_dot_product
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_non_semantic_info
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_shader_subgroup_extended_types
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_spirv_1_4
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_storage_buffer_storage_class
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_swapchain
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_swapchain_mutable_format
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_synchronization2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_timeline_semaphore
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_uniform_buffer_standard_layout
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_variable_pointers
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_KHR_vertex_attribute_divisor
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_4444_formats
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_buffer_device_address
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_calibrated_timestamps
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_debug_marker
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_descriptor_indexing
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_extended_dynamic_state
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_extended_dynamic_state2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_extended_dynamic_state3
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_external_memory_host
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_fragment_shader_interlock
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_hdr_metadata
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_host_image_copy
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_host_query_reset
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_image_robustness
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_inline_uniform_block
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_memory_budget
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_metal_objects
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_pipeline_creation_cache_control
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_pipeline_creation_feedback
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_post_depth_coverage
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_private_data
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_robustness2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_sample_locations
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_scalar_block_layout
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_separate_stencil_usage
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_atomic_float
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_demote_to_helper_invocation
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_stencil_export
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_subgroup_ballot
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_subgroup_vote
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_shader_viewport_index_layer
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_subgroup_size_control
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_swapchain_maintenance1
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_texel_buffer_alignment
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_texture_compression_astc_hdr
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_EXT_vertex_attribute_divisor
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_AMD_gpu_shader_half_float
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_AMD_negative_viewport_height
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_AMD_shader_image_load_store_lod
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_AMD_shader_trinary_minmax
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_IMG_format_pvrtc
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_INTEL_shader_integer_functions2
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_GOOGLE_display_timing
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_NV_fragment_shader_barycentric
+[14:28:05][gfx_vk_master_context.cpp:934]: 	VK_NV_glsl_shader
+[14:28:05][gfx_vk_master_context.cpp:1078]: Selected device:
+[14:28:05][gfx_vk_master_context.cpp:380]: 	API Version: 1.2.296
+[14:28:05][gfx_vk_master_context.cpp:382]: 	Driver Version: 0.2.2019 (10211)
+[14:28:05][gfx_vk_master_context.cpp:384]: 	Vendor: Apple (4203)
+[14:28:05][gfx_vk_master_context.cpp:386]: 	Device Type: IntegratedGpu
+[14:28:05][gfx_vk_master_context.cpp:387]: 	Device Name: Apple M4 Pro
+[14:28:05][gfx_vk_master_context.cpp:388]: 	Device ID: 453116425
+[14:28:05][gfx_vk_master_context.cpp:395]: 	Driver ID: Moltenvk
+[14:28:05][gfx_vk_master_context.cpp:396]: 	Driver Name: MoltenVK
+[14:28:05][gfx_vk_master_context.cpp:397]: 	Driver Info: 1.2.11
+[14:28:05][gfx_vk_master_context.cpp:411]: 	Memory Heap #0
+[14:28:05][gfx_vk_master_context.cpp:412]: 		Size: 24.00 GB
+[14:28:05][gfx_vk_master_context.cpp:413]: 		Flags: { DeviceLocal }
+[14:28:05][gfx_vk_master_context.cpp:423]: 			Memory Type #0: { DeviceLocal }
+[14:28:05][gfx_vk_master_context.cpp:423]: 			Memory Type #1: { DeviceLocal | HostVisible | HostCoherent | HostCached }
+[14:28:05][gfx_vk_master_context.cpp:423]: 			Memory Type #2: { DeviceLocal | LazilyAllocated }
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][gfx_vk_master_context.cpp:122]: Could not parse game version, or game version not present! Defaulting to 1.0.0
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "upscale" setting in "Graphics" category.
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "upscale_quality" setting in "Graphics" category.
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "anti_aliasing" setting in "Graphics" category.
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "portrait_multi_sampling" setting in "Graphics" category.
+[14:28:05][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "multi_sampling" setting in "Graphics" category.
+[14:28:05][pdx_audio2.cpp:540]: Legacy setting: audio_profile_headphones_path, use audio_profiles setting instead
+[14:28:05][pdx_audio2.cpp:547]: Legacy setting: audio_profile_tv_path, use audio_profiles setting instead
+[14:28:05][pdx_audio2.cpp:554]: Legacy setting: audio_profile_nightmode_path, use audio_profiles setting instead
+[14:28:05][pdx_audio2.cpp:614]: Creating FMOD sound engine
+[14:28:06][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "audio_device_profile" setting in "Audio" category.
+[14:28:06][pdx_ugc.cpp:78]: UGC backend is not running
+[14:28:06][jominiapplication.cpp:698]: DLC:
+Voice of the People Preorder|dlc/dlc006_voice_of_the_people_preorder/dlc006.dlc
+Pivot of Empire|dlc/dlc011_ip2/dlc011_ip2.dlc
+Victoria 2 Remastered Soundtrack|dlc/dlc001_preorder/dlc001.dlc
+National Awakening|dlc/dlc014_ip3/dlc014_ip3.dlc
+The Great Wave|dlc/dlc018_ep2/dlc018_ep2.dlc
+Songs of the Homeland|dlc/dlc015_songs_of_the_homeland/dlc015.dlc
+Region Pack 1|dlc/dlc008_rp1/dlc008_rp1.dlc
+Free Trains Pack|dlc/dlc009_trains_pack/dlc009_trains_pack.dlc
+Sphere of Influence|dlc/dlc010_ep1/dlc010_ep1.dlc
+Dawn of Wonder|dlc/dlc007_ap1/dlc007_ap1.dlc
+Warships Bonus Pack|dlc/dlc017_warships_bonus_pack/dlc017_warships_bonus_pack.dlc
+Trade Ships Bonus Pack|dlc/dlc012_trade_ships_bonus_pack/dlc012_trade_ships_bonus_pack.dlc
+Charters of Commerce|dlc/dlc013_mp1/dlc013_mp1.dlc
+Voice of the People|dlc/dlc004_voice_of_the_people/dlc004.dlc
+American Buildings Pack|dlc/dlc002_american_buildings/dlc002.dlc
+Melodies for the Masses|dlc/dlc003_melodies_for_the_masses/dlc003.dlc
+Iberian Twilight|dlc/dlc016_ip4/dlc016_ip4.dlc
+Mod:
+HSI Probe|/Users/eric/Documents/Paradox Interactive/Victoria 3/mod/hsi_probe
+
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][dlc.cpp:822]: Could not find item in store backend.
+[14:28:06][virtualfilesystem_physfs.cpp:460]: Mounted Data: /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/hsi_probe
+[14:28:06][dlc.cpp:748]: Mod HSI Probe () version 1.14.* successfully matched game version 1.14.5.
+[14:28:06][pdx_matchmaking.cpp:62]: Matchmaking Interface: Steam
+[14:28:06][defines.cpp:230]: Define 'MIN_COMBAT_UNITS_FOR_MULTIPLE_COMMANDERS_ABSOLUTE' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'MIN_COMBAT_UNITS_FOR_MULTIPLE_COMMANDERS_RELATIVE' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'RETIRE_COMMANDER_INTERACTION_KEY' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'COMMANDER_DESIRED_RANK_DISPARITY_IN_ARMY' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'COMMANDER_DESIRED_RANK_DISPARITY_IN_FLEET' defined in 'common/defines/00_ai.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'name' defined in 'common/defines/00_audio_persistent_objects.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'scope' defined in 'common/defines/00_audio_persistent_objects.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'CIVIL_WAR_UPRISING_STATE_EXCESSIVE_ARMY_FRACTION' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'BUILDING_MAX_PROFIT_TO_PAUSE_HIRES' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'WORLD_MARKET_MONOPOLY_MIN_SHARE' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'HIGH_POP_THRESHOLD' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'ROLE_RULER' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'ROLE_HEIR' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_POWERFUL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_INFLUENTIAL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'TARGET_NUM_POOL_POLITICIANS_MARGINAL_IG' defined in 'common/defines/00_defines.txt' not specified. Maybe a define macro is missing
+[14:28:06][defines.cpp:230]: Define 'FLAGSHIP_DECORATION_LOCATOR' defined in 'common/defines/00_graphics.txt' not specified. Maybe a define macro is missing
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/models'(.asset, , -1)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'fonts'(.font, , -1)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gui'(.gui, , -1)
+[14:28:06][application.cpp:925]: Starting checksum calculation
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/loadingscreens'(.dds, , 0)
+[14:28:06][application.cpp:975]: Feeding into checksum: BLOCK_MP_AND_IRONMAN
+[14:28:06][application.cpp:983]: Feeding game version into checksum: 1.14.5
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/frontend/interface/frontend/startscreen.dds'(.dds, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/script_values'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_effects'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_triggers'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_modifiers'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/loadingscreens'(.dds, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_lists'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_guis'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/scripted_rules'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/frontend/interface/frontend/startscreen.dds'(.dds, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/customizable_localization'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/named_colors'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/coat_of_arms/coat_of_arms'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/coat_of_arms/template_lists'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/ethnicities'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/genes'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/accessory_variations'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/accessories'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/portrait_animations'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/cameras/'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/environments/'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/portraits/portrait_modifiers'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/game_concepts'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/ai_strategies'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/alert_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/buildings'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/building_groups'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/buy_packages'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/script_values'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/pop_needs'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/cultures'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/country_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/country_ranks'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/diplomatic_actions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/diplomatic_plays'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/dynamic_country_names'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/game_rules'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/goods'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/ideologies'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/interest_groups'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/interest_group_traits'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/government_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/on_actions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/objectives'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/objective_subgoals'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/objective_subgoal_categories'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/proposal_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_effects'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/laws'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/institutions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/journal_entries'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/law_groups'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/pop_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_triggers'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_modifiers'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_lists'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_guis'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/religions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/subject_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/scripted_rules'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/state_traits'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/strategic_regions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/technology/eras'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/character_traits'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/character_templates'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/customizable_localization'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/country_definitions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/country_formation'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/country_creation'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/terrain'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'events'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'map_data/state_regions'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/map/city_data/city_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/map/spline_network/route_graphics'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/named_colors'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/map/spline_network/military_route_graphics'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/achievements'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/map/gradient_border_settings'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'gfx/map/map_modes'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/map_interaction_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:420]: Starting pre-enumerating 'common/company_charter_types'(.txt, , 0)
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'fonts'(.font, , -1) in 0.002 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/coat_of_arms/coat_of_arms'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/coat_of_arms/template_lists'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/genes'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gui'(.gui, , -1) in 0.002 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/ethnicities'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/accessory_variations'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/portrait_animations'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/accessories'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/cameras/'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/game_concepts'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/environments/'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/portraits/portrait_modifiers'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/ai_strategies'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/building_groups'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/buildings'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/alert_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/buy_packages'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/pop_needs'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/cultures'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/country_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/country_ranks'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/diplomatic_plays'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/diplomatic_actions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/game_rules'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/dynamic_country_names'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/goods'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/ideologies'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/interest_groups'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/interest_group_traits'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/government_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/objectives'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/on_actions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/objective_subgoals'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/objective_subgoal_categories'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/institutions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/proposal_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/laws'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/pop_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/religions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/law_groups'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/subject_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/state_traits'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/technology/eras'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/character_traits'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/character_templates'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/country_definitions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/country_formation'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/country_creation'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/strategic_regions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/terrain'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/journal_entries'(.txt, , 0) in 0.001 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/map/city_data/city_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/map/spline_network/route_graphics'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'map_data/state_regions'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/map/spline_network/military_route_graphics'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/achievements'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/map/gradient_border_settings'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/map/map_modes'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/map_interaction_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'common/company_charter_types'(.txt, , 0) in 0.000 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'events'(.txt, , 0) in 0.001 seconds
+[14:28:06][virtualfilesystem.cpp:388]: Done enumerating 'gfx/models'(.asset, , -1) in 0.082 seconds
+[14:28:06][pdxassetutil.cpp:304]: ThreadedInitTextureLookup: gfx/models
+[14:28:06][pdxassetutil.cpp:313]: ThreadedInitTextureLookup found 4558 files
+[14:28:06][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "disabled_categories" setting in "Audio" category.
+[14:28:06][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "disabled_tracks" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/MUSIC" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/AMBIENT" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/MUSIC_STINGERS" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/SOUNDTRACK" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/UI" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/SFX" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:325]: [SPdxJsonSettingsIO] "pdx_settings.json" file lacks "volume.vca:/Master" setting in "Audio" category.
+[14:28:07][pdx_json_settings.cpp:425]: [SPdxJsonSettingsIO] Category:"System" Setting:"common" won't be written 
+[14:28:07][jomini_social.cpp:20]: Created Jomini Social
+[14:28:08][virtualfilesystem.cpp:569]: Could not find texture due to 'VFSOpen Error: gfx/interface/icons/alert_icons/repairing.dds not found'
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_pedestal_05_mesh" in 386 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "predreadnought_base_mesh" in 283 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_pedestal_04_mesh" in 170 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_worldmarket_01_mesh" in 164 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_medical_firstaid_mesh" in 120 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_fishingwharf_01_mesh" in 115 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_vatican_city_01_mesh" in 113 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_bush_03_mesh" in 110 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_body_mesh" in 110 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_head_mesh" in 107 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "canal_kiel_mesh" in 106 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "destroyer_base_mesh" in 101 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_squad_ground_01_mesh" in 99 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_japanese_01_mesh" in 98 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "multi_test_object_mesh" in 97 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_port_docks_01_mesh" in 97 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_greek_01_mesh" in 95 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "halloween_castledracula_mesh" in 91 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_japanese_common_01_mesh" in 88 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_city_financialdistrict_01_mesh" in 86 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_african_t3_mesh" in 84 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_manufactory_02_mesh" in 83 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_railroad_infantrycart_generic_mesh" in 80 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_urban_city_residential_mid_03_mesh" in 79 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_govadmin_01_mesh" in 78 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_factory_warmachine_01_mesh" in 77 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_urban_residential_rich_03_mesh" in 76 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_head_mesh" in 74 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_naval_rowboat_generic_mesh" in 72 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_forestry_loggingcamp_02_mesh" in 71 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tools_manufactory_01_mesh" in 71 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "lightcruiser_base_mesh" in 70 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_train_locomotive_01_mesh" in 69 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "troopship_sails_mesh" in 69 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_necklace_louis_delescluze_mesh" in 67 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_forestry_scatter_01_mesh" in 67 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_body_mesh" in 67 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "edgeofworld_papermap_mesh" in 66 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_bush_01_mesh" in 64 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_taj_mahal_01_mesh" in 62 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_barricade_line_01_mesh" in 61 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_savanna_001_mesh" in 61 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_dreadnought_generic_mesh" in 60 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_urban_port_shipyard_01_mesh" in 60 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_chhatrapati_shivaji_terminus_mesh" in 59 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_01_mesh" in 59 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wild_west_town_mesh" in 59 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "modernironclad_base_mesh" in 59 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "southern_plantation_mesh" in 59 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_ironfrigate_light_mesh" in 58 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_aircraftcarrier_light_mesh" in 58 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_european_t2_mesh" in 57 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "billboard_placeholder_mesh" in 56 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_port_shipyard_01_mesh" in 55 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_lighthouse_01_mesh" in 55 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_modernironclad_light_mesh" in 54 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_port_navalbase_01_mesh" in 52 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "canal_panamacanal_01_mesh" in 52 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_ship_of_the_line_mesh" in 52 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "edgeofworld_mesh" in 51 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_seaplanetender_medium_mesh" in 51 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_arabic_military_01_mesh" in 51 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_submarine_generic_mesh" in 50 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "rock_granite_01_mesh" in 49 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_civilian_coat_european_02_mesh" in 49 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "protectedcruiser_base_mesh" in 48 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_european_common_02_mesh" in 47 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_mechanized_ground_01_mesh" in 47 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_trench_infantry_mesh" in 46 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_rural_residential_poor_01_mesh" in 44 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_01_mesh" in 44 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_railroad_armoredlocomotive_generic_mesh" in 44 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_manufactory_03_mesh" in 43 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_ethiopian_royal_01_mesh" in 43 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "train_diesel_01_mesh" in 43 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_lightcruiser_light_mesh" in 43 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_occupation_flag_mesh" in 43 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_armouredcruiser_medium_mesh" in 42 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_vested_tailcoat_01_mesh" in 42 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "scaffolding_02_mesh" in 42 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_naval_base_01_mesh" in 42 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_frigate_generic_mesh" in 39 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_battleship_mesh" in 39 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "shader_test_mesh" in 38 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_shipoftheline_heavy_mesh" in 37 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "funnel_medium_none_01_mesh" in 36 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_university_01_mesh" in 36 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_09_mesh" in 34 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_lighthouse_01_mesh" in 34 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "aircraftcarrier_base_mesh" in 34 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_destroyer_generic_mesh" in 34 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "shipoftheline_base_mesh" in 34 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_torpedoboat_medium_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_white_house_01_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_poor_02_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_trees_01_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_waistcoat_european_02_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_rural_residential_poor_01_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "ship_viewer_water_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_arms_machinegun_maxim_mesh" in 33 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_frigate_heavy_mesh" in 32 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_loggingcamp_mixwoodpiles_02_mesh" in 32 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "papermap_cloth_01_mesh" in 32 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_01_1s_0d_2f_mesh" in 32 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_protectedcruiser_medium_mesh" in 32 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_southasian_t3_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_transportation_01_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_tank_heavy_generic_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_aerial_bleriotxi_01_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_fir_005_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "troopship_base_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_pedestal_06_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "shader_test_simple_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_barracks_01_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_generic_03_mesh" in 31 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_rural_manorhouse_01_mesh" in 30 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_troopship_heavy_mesh" in 30 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_shako_hat_01_mesh" in 30 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "windmill_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_rainforest_004_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_city_financialdistrict_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_pedestal_07_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_rural_manorhouse_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_manufactory_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_siamese_royal_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_historical_mazzini_01_mesh" in 29 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_necklace_persian_royal_jewelry_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_historical_friedrich_engels_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_artillery_siege_generic_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_cavalry_horse_white_01_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "strait_fortification_tower_latin_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_basecamp_generic_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_rural_farm_centerpiece_01_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_carlists_general_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_loggingcabin_01_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_coastaldefense_heavy_mesh" in 28 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_european_military_01_soldier_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_greek_01_bs_thick_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_ethiopian_common_01_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_forestry_centerpiece_01_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_forestry_camp_02_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_companyhq_01_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_european_fancy_single_breasted_01_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "lake_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_swaddled_baby_01_mesh" in 27 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_obeliskegypt_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "railroad_bridge_01_large_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_greatcoat_02_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "torpedoboat_base_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "zeppelin_02_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_line_infantry_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_trench_ground_01_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_historical_king_william_01_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_centerpiece_03_mesh" in 26 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_glasses_round_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_protectedcruiser_light_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "horse_cart_01_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_mobile_artillery_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_chinese_01_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "armouredcruiser_base_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_skirmish_ground_01_mesh" in 25 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "monitor_funnel_smokebox_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_rural_plantation_01_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "iceberg_01_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_rural_forestry_camp_02_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_university_01_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_ceo_02_mesh" in 24 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "gun_bigturret_tripple_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "oak_tree_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_port_centerpiece_02_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_wallofchina_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_tradecenter_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_basket_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_province_farm_01_nobillborads_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_mining_coaldepo_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_02_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_bundleofflowers_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_african_01_mesh" in 23 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_urban_city_residential_mid_03_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_arabic_t3_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "naval_order_base_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_mining_oil_01_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_giza_necropolis_01_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_ironfrigate_medium_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_beret_hat_01_mesh" in 22 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_epaulettes_cossack_01_mesh" in 21 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_vested_tailcoat_03_mesh" in 21 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_sash_european_civilian_03_bs_old_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_wallofchinatower_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_southasian_t2_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_mustache_asian_03_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_forestry_centerpiece_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_battle_sword_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_teeth_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_mining_coaldepo_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "dreadnought_base_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "tree_palm_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_road_truck_generic_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_art_test_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_rural_farm_centerpiece_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "canal_suezcanal_under_construction_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_farm_scatter_01_mesh" in 20 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "earlyironclad_gunbattery_light_r_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "train_cargo_log_02_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_greek_01_bs_fat_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_european_general_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_port_01_1s_1d_1f_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_car_01_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_dreadnought_light_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "superdreadnought_base_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_city_tradecenter_01_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_greatcoat_01_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "frigate_base_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "ironfrigate_base_mesh" in 19 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_european_04_pope_cap1_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_urban_residential_mid_03_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_military_cap_01_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_carlists_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_flatmap_unit_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_academy_01_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_oil_drill_01_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_earlyironclad_light_mesh" in 18 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "naval_order_raiding_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "vfx_ui_plane_gameover_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_pedestal_02_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_sash_slavic_agitator_01_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_tradecenter_01_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_rich_03_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_destroyer_medium_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_academy_01_mesh" in 17 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "seaplanetender_signalflags_01_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_arabic_general_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "ui_flag_01_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_ironclad_ship_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_centerpiece_skyscraper_01_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_mustache_european_07_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_road_horsecart_generic_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "seaplanetender_crane_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_african_general_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_tradecenter_01_mesh" in 16 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "gun_sidecannon_medium_01_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_lumberdepo_02_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_southasian_t1_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_scoutcruiser_generic_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_gb_01_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_centerpiece_01_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_carrier_generic_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_siege_artillery_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_late_military_greatcoat_01_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_urban_city_townsquare_skyscraper_01_mesh" in 15 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_prop_dark_hat_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "simple_plane_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_chinese_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_european_carnaval_pierrot_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_native_american_01_high_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_government_administration_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_forestry_centerpiece_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_financialdistrict_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_ceo_01_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_eastasian_t1_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_tank_light_generic_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_capitol_building_mesh" in 14 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_eyes_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_port_navalbase_01_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_rural_building_rich_02_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_monitor_generic_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_city_academy_01_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_artillery_shrapnel_generic_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_predreadnought_medium_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_lightcruiser_medium_mesh" in 13 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_southasian_general_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_parasol_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_armouredcruiser_heavy_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wind_trail_02_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_troopship_medium_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_torpedoboatdestroyer_light_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_butcherknife_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_necklace_power_bloc_religious_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belt_arabic_royal_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_lighthouse_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_skull_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_eiffel_tower_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_armored_division_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_rural_ranch_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_arabic_t1_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_ethiopian_royal_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_polynesian_01_high_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_south_american_gaucho_hat_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_indian_common_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_siamese_common_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_farm_farmstead_01_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_aircraftcarrier_heavy_mesh" in 12 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_troopship_light_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_ironfrigate_heavy_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_arabic_t2_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_african_t1_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_seaplanetender_light_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belts_cuirass_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_military_09_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_urban_city_residential_rich_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_carnaval_pierrot_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_lightcruiser_heavy_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_shovel_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_circumpolar_01_low_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_armouredcruiser_light_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_native_american_01_high_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_railroad_artillery_shrapnel_generic_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_submarine_heavy_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_legwear_vivandiere_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_irregular_ground_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_european_royal_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_necklace_power_bloc_ideological_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_legwear_african_zulu_dingane_01_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_sittingman_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_seaplanetender_heavy_mesh" in 11 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_necklace_chinese_01_high_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_04_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_ship_cargo_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "vfx_ui_plane_battle_progressbar_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_historical_marx_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_european_05_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_korean_low_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_16_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_financialdistrict_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_monitor_medium_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_pointingman_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_umbrella_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_indian_common_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_mid_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_forbidden_city_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_legwear_slavic_01_low_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_religious_cape_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_top_layer_japanese_raincoat_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_african_03_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_legwear_slavic_01_high_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_torpedoboatdestroyer_medium_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_japanese_01_mid_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_legwear_south_american_01_low_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_rural_residential_rich_02_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belts_sash_power_bloc_02_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_european_agitator_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_rural_residential_mid_01_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_central_asian_01_high_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_aircraftcarrier_medium_mesh" in 10 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_centerpiece_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_08_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_balkan_fur_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_protectedcruiser_heavy_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_mobile_artillery_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfits_naval_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_pen_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_indian_common_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_poor_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_arabic_low_tier_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_historical_von_metternich_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_hagia_sophia_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_working_class_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_farm_ranch_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_rural_residential_rich_03_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_irregular_infantry_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_legwear_navy_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_greek_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_sun_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_mustache_african_03_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_african_common_02_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_mustache_bahadur_shah_zafar_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_polynesian_01_high_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_arabic_common_02_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_common_03_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_native_american_01_high_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_indian_high_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_indian_royal_01_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_african_t2_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_eastasian_general_mesh" in 9 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_rural_residential_poor_02_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_portuguese_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_vested_tailcoat_02_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_mobile_artillery_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_centerpiece_skyscraper_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_line_infantry_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_indian_royalty_02_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_city_academy_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_european_10_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_slavic_01_high_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "papermap_extension_bottom_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_queen_victoria_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_transportation_03_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_blockade_generic_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_colonial_helmet_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "papermap_cigarbox_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_indian_common_02_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_european_16_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_necklace_power_bloc_sovereign_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_eastasian_t3_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_european_t1_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "earlyironclad_base_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "multi_test_object_roughness_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "strait_fortification_tower_arabic_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_angel_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_south_american_gaucho_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_outfit_slavic_kokoshnik_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_big_ben_01_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "papermap_letter_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_european_t3_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonders_central_park_mesh" in 8 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_urban_city_townsquare_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_townsquare_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_statue_of_liberty_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_historical_dracula_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_rural_manorhouse_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_predreadnought_heavy_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_irregular_infantry_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "diorama_battle_line_ground_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_shirt_indian_maharaja_singh_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "rubber_lodge_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_zulu_impi_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_alexis_de_tocqueville_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_arabic_naser_qajar_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_greek_fustanella_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_furniture_manufactory_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_necklace_african_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_japanese_common_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_native_american_01_low_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "powerbloc_statue_hero_elephant_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "ui_flag_01_aimated_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "prop_caliper_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_poor_03_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_financialdistrict_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_necklace_power_bloc_trade_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_beard_indian_04_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_necklace_indian_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_angkorwat_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_nativeamerican_t1_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_european_military_01_pocketless_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_korean_common_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_rural_manorhouse_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_infantry_eastasian_t2_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "horses_01_mesh" in 7 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_rural_residential_mid_03_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "mininghub_centerpiece_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_artillery_mobile_generic_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_coat_ceo_02_bs_old_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_earlyironclad_medium_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_barricade_trench_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_farm_plantation_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_irregular_infantry_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_port_centerpiece_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_korean_emperess_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_govadmin_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_top_layer_european_royal_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_irregular_infantry_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_forestry_centerpiece_hardwoodpiles_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "color_reference_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "steam_transport_ship_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_military_05_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_townsquare_skyscraper_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_religious_catholic_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_rural_manorhouse_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_city_centerpiece_skyscraper_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_belts_sash_power_bloc_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_coat_lakshmibai_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_mustache_european_05_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_destroyer_heavy_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_top_layers_power_bloc_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "torpedoboatdestroyer_base_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_rural_residential_poor_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_rural_residential_rich_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_university_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_headgear_slavic_kokoshnik_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_rural_residential_rich_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_arabic_royal_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_rural_residential_poor_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_city_barracks_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_navy_torpedo_generic_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_saint_basils_cathedral_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_factory_powerplant_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_african_common_02_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "generic_logisticscenter_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_prop_gloves_01_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_hair_european_15_mesh" in 6 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_dreadnought_heavy_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_province_subfarm_02_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "european_urban_residential_rich_03_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_farm_scatter_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_superdreadnought_light_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_monitor_light_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "arabic_urban_city_residential_mid_02_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_port_navalbase_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_frigate_light_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_city_barracks_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_port_centerpiece_02_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_farm_plantation_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "asian_city_barracks_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_machu_picchu_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_urban_city_residential_poor_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "papermap_object_compass_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "cliff_canyon_03_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_modernironclad_heavy_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "african_port_centerpiece_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_african_02_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_khaju_bridge_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_hair_european_04_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "latin_urban_city_centerpiece_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "figurehead_poseidon_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_great_mosque_of_djenne_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_artillery_cannon_generic_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "wonder_christ_the_redeemer_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "hull_shipoftheline_medium_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_aiguillettes_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_outfit_japanese_common_01_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "male_headgear_european_military_06_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "female_necklace_south_american_01_low_mesh" in 5 ms
+[14:28:12][pdx_3dtypes.cpp:217]: Total time "military_transport_naval_landingcraft_generic_mesh" in 5 ms

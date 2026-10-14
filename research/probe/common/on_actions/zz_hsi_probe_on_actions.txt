@@ -1,0 +1,18 @@
+﻿on_game_started = {
+	on_actions = { hsi_probe_start_a }
+}
+on_game_started_after_lobby = {
+	on_actions = { hsi_probe_start_b }
+}
+on_monthly_pulse_country = {
+	on_actions = { hsi_probe_monthly }
+}
+hsi_probe_start_a = {
+	effect = { hsi_probe_start_records_a = yes }
+}
+hsi_probe_start_b = {
+	effect = { hsi_probe_start_records_b = yes }
+}
+hsi_probe_monthly = {
+	effect = { hsi_probe_monthly_records = yes }
+}

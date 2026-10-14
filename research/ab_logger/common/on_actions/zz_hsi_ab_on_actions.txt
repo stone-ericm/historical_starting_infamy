@@ -1,0 +1,9 @@
+﻿# Test-only: logs every diplomatic play start. Loaded in both A/B arms; never shipped.
+on_diplomatic_play_started = {
+	on_actions = { hsi_ab_play_started }
+}
+hsi_ab_play_started = {
+	effect = {
+		debug_log = "HSIAB;[TimeKeeper.GetCurrentDate.GetString];initiator=[SCOPE.sCountry('initiator').GetTagName];target=[SCOPE.sCountry('target').GetTagName]"
+	}
+}
