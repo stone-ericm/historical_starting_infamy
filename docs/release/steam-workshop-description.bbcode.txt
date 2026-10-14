@@ -18,3 +18,6 @@ This is only a defensible estimate, not a simulation.
 
 [h2]Technical[/h2]
 Two script files, nothing overwritten. Runs once per new campaign (on_game_started_after_lobby, guarded by a global variable), respects the Infamy Generation game rule, does nothing on an existing save. Victoria 3 1.14.5, vanilla. Not tested in multiplayer.
+
+[h2]Source[/h2]
+The ledger, the measurement logs and the generator are on GitHub: [url=https://github.com/stone-ericm/historical_starting_infamy]stone-ericm/historical_starting_infamy[/url]

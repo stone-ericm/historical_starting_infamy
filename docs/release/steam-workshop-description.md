@@ -20,3 +20,5 @@ How the numbers were made. Twenty acts (Greek and Belgian independence and their
 What it does technically: two script files, nothing overwritten. It registers on on_game_started_after_lobby, applies the table once per new campaign, guarded by a global variable, and respects the Infamy Generation rule (Standard when none is set). It does nothing on an existing save.
 
 Victoria 3 1.14.5, vanilla. Should coexist with any mod that does not itself change starting infamy. Not tested in multiplayer.
+
+Source, ledger and measurement logs: https://github.com/stone-ericm/historical_starting_infamy
