@@ -62,7 +62,7 @@ tags={
 	"Balance"
 }
 name="Historical Starting Infamy"
-supported_version="1.14.*"
+supported_version="$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['supported_game_version'])" "$OUT/.metadata/metadata.json")"
 path="mod/$(basename "$OUT")"
 MOD
 echo "descriptor: $(dirname "$OUT")/$(basename "$OUT").mod"
