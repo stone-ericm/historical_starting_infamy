@@ -1,5 +1,7 @@
 # Acceptance boot (Eric), one short session, about five minutes
 
+Start ONE campaign per boot: a second New Game in the same session logs a second start and the checks refuse it (2026-11-07).
+
 The shipped mod is the release folder the launcher sees (`~/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release`,
 built by `tools/build_release.sh` from this repository, which lives in `~/projects/` since 2026-10-14 because the
 launcher cannot cope with a git repository inside its mod folder). The boot script enables that folder in place, backs
@@ -11,7 +13,7 @@ your playset up into a run receipt and restores it on exit, exactly as the probe
    HSI_MOD_PATH="$HOME/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release" bash research/measurement/boot_probe.sh
    ```
 2. New Game. Pick any country (France is fine). Leave the Infamy Generation rule at its default (Standard). Start.
-3. Stay paused. Open Egypt's country panel: it should show 12 infamy (v0.2.0 on 1.15; v0.1.0 on 1.14.5 showed 54). Open Punjab (the Sikh Empire): 2 (was 11). Any other
+3. Stay paused. Open Egypt's country panel: it should show 11 infamy (v0.2.0 on 1.15; v0.1.0 on 1.14.5 showed 54). Open Punjab (the Sikh Empire): 2 (was 11). Any other
    country: 0, except Bolivia at vanilla's 50. Screenshot Egypt's infamy tooltip.
 4. Still paused: Save Game as `hsi_accept_std_1836_01_01`. Quit to desktop. The boot window restores your playset.
 5. Tell Claude. Claude collects (`research/measurement/collect_evidence.sh ~/Desktop`), copies the save into

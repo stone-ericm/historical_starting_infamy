@@ -25,8 +25,8 @@ AI attribution trailers (his rule for public GitHub posts). The Steam Workshop i
   Live receipt check before Eric quits: `research/measurement/checkpoint_logs.sh` (copies this session's rotated debug*.log into `.run/active/checkpoint/`), then `cd tools && python3 -m hsi.measurement check --debug-log ../research/measurement/.run/active/checkpoint/debug*.log --research ../research --probe-config ../research/measurement/.run/active/probe-config.json`.
   Boot (Eric): `research/measurement/boot_probe.sh` (restores the playset itself on exit; `restore_playset.sh` only if that window was killed); capture plan in `research/measurement/capture-plan.md`.
 - Collect after a boot: `research/measurement/collect_evidence.sh ~/Desktop` (fresh `<date>-run-<id>` dir bound to `.run/last`; prints only the path), then `cd tools && python3 -m hsi.measurement check --debug-log <dir>/debug*.log …` and `extract --debug-log <dir>/debug*.log --out <dir>/probe-extract.log`; manifest via `hsi.measurement.write_manifest`. Attempt 1 (2026-10-14, failed probe, valid tooltips) is `research/measurement/2026-10-14-run-20261014-142803-66370/` with `attempt-notes.md`.
-- Generate: `cd tools && python3 -m hsi.generate --repo .. --game-dir "$GAME" --measurement ../research/measurement/2026-10-14-run-20261014-150956-73604`,
-  then `python3 -m hsi.validate --repo .. --game-dir "$GAME" --measurement ../research/measurement/2026-10-14-run-20261014-150956-73604` (boot 2 is THE measurement; the directory is named explicitly, never "the latest").
+- Generate: `cd tools && python3 -m hsi.generate --repo .. --game-dir "$GAME" --measurement ../research/measurement/2026-11-07-run-20261107-121915-79721/session-2`,
+  then `python3 -m hsi.validate --repo .. --game-dir "$GAME" --measurement ../research/measurement/2026-11-07-run-20261107-121915-79721/session-2` (the 1.15 boot's second campaign is THE measurement since v0.2.0; the directory is named explicitly, never "the latest"; the 1.14.5 boot 2 of 2026-10-14 is kept as history).
 - Acceptance (Eric boots per `research/acceptance/ACCEPTANCE.md`): `cd tools && python3 -m hsi.savecheck --save <plaintext .v3> --tables ../research/tables.json --rule standard --tolerance 0.005`.
 
 ## Hard rules
@@ -41,7 +41,7 @@ AI attribution trailers (his rule for public GitHub posts). The Steam Workshop i
 ## On a game patch (done for 1.15 on 2026-11-06)
 
 - Diff every vanilla file the effect header hashes (`# HSI-HASH vanilla/...`) between the old and new trees, re-read each constant in `tools/hsi/constants.py` by define NAME (line numbers move), and diff `00_infamy_values.txt`.
-- A formula change becomes a new variant in `formula.state_base` (`K.GAMES`), with `K.GAME_VERSION` the priced game. Oracle A keeps checking the replica against the measurement boot with `K.MEASUREMENT_GAME` (1.14.5): never re-point it at a game the boot did not run.
+- A formula change becomes a new variant in `formula.state_base` (`K.GAMES`), with `K.GAME_VERSION` the priced game. Oracle A checks the replica against the measurement boot with `K.MEASUREMENT_GAME`, the game THAT boot ran (1.15 since the 2026-11-07 boot): never point it at a game the boot did not run. A re-measure after a patch is one probe boot (PROCEDURE.md steps 1, 2, 4, 6, 7); if one boot holds two campaigns, split it with `research/scripts/split_sessions.py <run>` and generate from the session the procedure describes.
 - Rerun `research/scripts/author_ledger.py` against the new game: the CSVs must come out byte-identical, or the history change touches the ledger.
 - `test_capture_audit.py` audits the 1.14.5 capture plan against the archived 1.14.5 tree (`HSI_MEASUREMENT_GAME_DIR`); 1.15 moved Russian ownership, which the plan does not follow.
 
