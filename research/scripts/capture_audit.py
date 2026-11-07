@@ -41,7 +41,9 @@ def blocks(text, pat):
         yield m.group(1), text[i:j - 1]
 
 class Vanilla:
-    def __init__(self, game: Path):
+    def __init__(self, game: Path, formula_game: str = K.GAME_VERSION):
+        # the formula variant the estimates use; the 2026-10-14 plan was for a 1.14.5 boot (K.MEASUREMENT_GAME)
+        self.formula_game = formula_game
         self.states = {}      # STATE -> {"owners": [(tag, type)], "homelands": [...], "claims": [...]}
         txt = (game / "common/history/states/00_states.txt").read_text(encoding="utf-8-sig")
         for name, blk in blocks(txt, r"s:(STATE_[A-Z0-9_]+)\s*=\s*\{"):
@@ -103,7 +105,7 @@ class Vanilla:
         c = Component(share, share, self.standing(state, owner, stype), self.ctype.get(owner, "recognized"),
                       aggressor_homeland=any(c in self.cultures.get(holder, []) for c in self.states[state]["homelands"]),
                       adjacent=adjacent, interest_tier=3)
-        return component_value(c, self.ctype.get(holder, "recognized"), unrec_mult)
+        return component_value(c, self.ctype.get(holder, "recognized"), unrec_mult, self.formula_game)
 
 def audit(plan: dict, V: Vanilla):
     holder = plan["holder"]; G = plan.get("general_mult_estimate", 0.0); rule = plan["rule"]
@@ -188,8 +190,10 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("game_dir"); ap.add_argument("--plan", default="research/measurement/capture-plan.json")
     ap.add_argument("--write-config", help="write the candidates' slices into this probe config as fixture_slices")
+    ap.add_argument("--formula-game", choices=K.GAMES, default=K.GAME_VERSION,
+                    help="formula variant for the estimates; the game the planned boot will run")
     a = ap.parse_args(argv)
-    V = Vanilla(Path(a.game_dir)); plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
+    V = Vanilla(Path(a.game_dir), a.formula_game); plan = json.loads(Path(a.plan).read_text(encoding="utf-8"))
     rows, ok = audit(plan, V)
     print(f"holder {plan['holder']} rule {plan['rule']} general_mult {plan.get('general_mult_estimate', 0.0)} unrec_mult {plan.get('unrec_mult_estimate', 0.0)}; "
           "estimates: gdp share = pop share, interest tier 3, adjacency as declared; statuses verify the static chain only")

@@ -20,7 +20,8 @@ def load_audit():
 @pytest.fixture(scope="module")
 def vanilla():
     mod = load_audit()
-    return mod, mod.Vanilla(GAME)
+    from hsi import constants as K
+    return mod, mod.Vanilla(GAME, K.MEASUREMENT_GAME)   # the plan's boot ran 1.14.5: tree AND arithmetic (review v02-r1 R2)
 
 def test_the_superseded_plan_is_rejected(vanilla):
     mod, V = vanilla
@@ -44,6 +45,9 @@ def test_the_committed_plan_passes_every_required_capture(vanilla):
         assert passing or optional, (cap, [r for r in rows if r[0] == cap])
     primaries = {r[0]: r for r in reversed(rows)}       # first row per capture
     assert primaries["A"][3] == "OK" and primaries["B"][3] == "OK" and primaries["Cmin"][3] == "OK" and primaries["Cmax"][3] == "OK"
+    # pins the ARITHMETIC as well as the tree: under 1.14.5 the Wales floor fixture clears the boundary, under the
+    # 1.15 state base it would not (review v02-r1 R2)
+    assert [r[3] for r in rows if r[0] == "D" and r[2] == "WLS"] == ["OK"]
 
 def test_truce_and_claim_refusals(vanilla):
     # review R2 finding N3: a history truce or a holder claim must fail a candidate; the runtime conditions stay visible

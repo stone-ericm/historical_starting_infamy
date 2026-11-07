@@ -84,3 +84,21 @@ def test_default_game_is_115():
 def test_unknown_game_refused():
     with pytest.raises(ValueError):
         component_value(comp(), "recognized", 0.0, game="1.13")
+
+
+# Factor and precedence rules are the same in both games; check them under each, with shares above the 1.15 floor
+# so a version-specific slip shows (review v02-r1 R3: disabling the unrecognized discount for 1.15 alone used to pass).
+BASE_OF = {"1.14.5": lambda p, g: 5 + p + g, "1.15": lambda p, g: max(p, 1) + max(g, 1)}
+
+@pytest.mark.parametrize("game", ["1.14.5", "1.15"])
+def test_factors_and_precedence_in_both_games(game):
+    b = BASE_OF[game](4.6, 3.9)
+    shares = dict(pop_share_uncapped=4.6, gdp_share_uncapped=3.9)
+    assert component_value(comp(**shares, aggressor_homeland=True, shared_language=True), "recognized", 0.0, game=game) == pytest.approx(b * 0.75)
+    assert component_value(comp(**shares, shared_language=True), "recognized", 0.0, game=game) == pytest.approx(b * 0.85)
+    assert component_value(comp(**shares, aggressor_homeland=True, homeland_bonus=True, language_bonus=True), "recognized", 0.0, game=game) == pytest.approx(b * 0.75 * 0.9)
+    assert component_value(comp(**shares, claim=True, scripted_unification=True), "recognized", 0.0, game=game) == pytest.approx(b * 0.25)
+    assert component_value(comp(**shares, adjacent=True, interest_tier=1), "recognized", 0.0, game=game) == pytest.approx(b * 0.9 * 1.25)
+    c = comp(**shares, standing="homeland", owner_type="unrecognized", adjacent=True, interest_tier=2)
+    assert component_value(c, "recognized", -0.1, game=game) == pytest.approx(b * 1.5 * 0.9 * 1.1 * 0.9)   # unrecognized discount
+    assert component_value(c, "unrecognized", -0.1, game=game) == pytest.approx(b * 1.5 * 0.9 * 1.1)       # only for a recognized holder
