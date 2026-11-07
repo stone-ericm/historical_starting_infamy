@@ -1,7 +1,15 @@
 # tools/hsi/constants.py
-"""Every vanilla 1.14.5 number the generator uses. Source: common/defines/00_defines.txt (D) and
-common/script_values/00_diplomacy_values.txt (DV) unless noted. Re-read these on any game patch."""
-STATE_BASELINE = 5.0                 # D:1121 WAR_GOAL_INFAMY_STATE_BASELINE
+"""Every vanilla number the generator uses. Source: common/defines/00_defines.txt (D) and
+common/script_values/00_diplomacy_values.txt (DV) unless noted. Line numbers are 1.14.5's; re-read these on
+any game patch. Re-read for 1.15.0 on 2026-11-06: every value below is unchanged except the state baseline."""
+GAME_VERSION = "1.15"                # the game the shipped tables are priced for
+GAMES = ("1.14.5", "1.15")           # formula variants formula.py knows
+MEASUREMENT_GAME = "1.14.5"          # the game the named measurement boot (2026-10-14 run 150956) ran: oracle A checks
+                                     # the formula replica against that boot's engine values with THIS variant
+STATE_BASELINE = 1.0                 # 1.15 D:1080 WAR_GOAL_INFAMY_STATE_BASELINE = 1, "GDP and population of states always
+                                     # contribute at least this much infamy": a floor under each share (00_infamy_values.txt:37,51,71)
+STATE_BASELINE_1_14_5 = 5.0          # 1.14.5 D:1121, "Flat base infamy of every state, added to its population and GDP share
+                                     # contributions"; kept only for oracle A against the 1.14.5 measurement boot
 WORLD_SHARE_SCALE = 10000.0          # D:1113 WAR_GOAL_INFAMY_WORLD_SHARE_SCALE
 POP_WEIGHT = 0.375                   # D:1114 WAR_GOAL_INFAMY_POPULATION_WEIGHT
 GDP_WEIGHT = 0.375                   # D:1115 WAR_GOAL_INFAMY_GDP_WEIGHT

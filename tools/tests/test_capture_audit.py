@@ -1,14 +1,16 @@
 # tools/tests/test_capture_audit.py
-"""The capture plan's static audit (review R1 findings B1/B2). Needs the vanilla install; skipped without it."""
+"""The capture plan's static audit (review R1 findings B1/B2). The plan was for the 2026-10-14 measurement boots on
+1.14.5, so it is audited against a 1.14.5 tree (1.15 moved Russian state ownership, which the plan does not need to
+follow): HSI_MEASUREMENT_GAME_DIR, default the archived 1.14.5 tree; skipped when that tree is not mounted."""
 import importlib.util
 import json
 import os
 from pathlib import Path
 import pytest
 
-GAME = Path(os.environ.get("HSI_GAME_DIR", Path.home() / "Library/Application Support/Steam/steamapps/common/Victoria 3/game"))
+GAME = Path(os.environ.get("HSI_MEASUREMENT_GAME_DIR", "/Volumes/EORScratch/eor-tools/vanilla-1.14.5-build25629520/game"))
 REPO = Path(__file__).resolve().parents[2]
-pytestmark = pytest.mark.skipif(not (GAME / "common/history/states/00_states.txt").exists(), reason="vanilla 1.14.5 install not present")
+pytestmark = pytest.mark.skipif(not (GAME / "common/history/states/00_states.txt").exists(), reason="1.14.5 measurement-era vanilla tree not present")
 
 def load_audit():
     spec = importlib.util.spec_from_file_location("capture_audit", REPO / "research/scripts/capture_audit.py")

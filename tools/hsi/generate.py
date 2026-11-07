@@ -70,7 +70,7 @@ def diagnostic_check(led: Ledger, snap, tolerance: float = 0.005) -> list:
                       TYPE_CODES[d["owner_type"]], d["aggressor_homeland"] == 1.0, d["shared_language"] == 1.0,
                       d["claim"] == 1.0, d["scripted_unification"] == 1.0, d["adjacent"] == 1.0,
                       int(d["interest_bucket"]), d["homeland_bonus"] == 1.0, d["language_bonus"] == 1.0)
-        ours = component_value(c, TYPE_CODES[d["root_type"]], d["unrec_mult"])   # the root's modifier logged with the record (R2 N1)
+        ours = component_value(c, TYPE_CODES[d["root_type"]], d["unrec_mult"], K.MEASUREMENT_GAME)   # the root's modifier logged with the record (R2 N1); the boot's own game version
         if abs(ours - d["siv"]) > tolerance:
             problems.append(f"{holder}/{sk}/{owner}: generator {ours:.4f} vs engine {d['siv']:.4f}")
     return problems

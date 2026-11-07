@@ -39,11 +39,20 @@ def interest_factor(tier: int) -> float:
         return 1.0 + K.INTEREST_DECREASE_MEDIUM
     return 1.0
 
-def component_breakdown(c: Component, holder_type: str, unrec_mult: float) -> dict:
+def state_base(pop_c: float, gdp_c: float, game: str = K.GAME_VERSION) -> float:
+    """The state's base before standing. 1.14.5: a flat 5 plus both capped shares. 1.15: each capped share floored at
+    the baseline 1 (00_infamy_values.txt:31-75, D:1080), nothing added."""
+    if game == "1.14.5":
+        return K.STATE_BASELINE_1_14_5 + pop_c + gdp_c
+    if game == "1.15":
+        return max(pop_c, K.STATE_BASELINE) + max(gdp_c, K.STATE_BASELINE)
+    raise ValueError(f"unknown game version {game!r}; known: {K.GAMES}")
+
+def component_breakdown(c: Component, holder_type: str, unrec_mult: float, game: str = K.GAME_VERSION) -> dict:
     """state_infamy_value for one formula state, root = holder, with every intermediate (the derivation's
     component rows, final review F3): capped shares, base, standing, each factor applied, the pre-floor value."""
     pop_c, gdp_c = capped(c.pop_share_uncapped), capped(c.gdp_share_uncapped)
-    base = K.STATE_BASELINE + pop_c + gdp_c
+    base = state_base(pop_c, gdp_c, game)
     v = base * K.STANDING[c.standing]
     factors = []
     if c.aggressor_homeland:
@@ -68,9 +77,9 @@ def component_breakdown(c: Component, holder_type: str, unrec_mult: float) -> di
     return {"pop_capped": pop_c, "gdp_capped": gdp_c, "base": base, "standing_mult": K.STANDING[c.standing],
             "factors": factors, "pre_floor": v, "value": max(v, K.STATE_MIN)}
 
-def component_value(c: Component, holder_type: str, unrec_mult: float) -> float:
+def component_value(c: Component, holder_type: str, unrec_mult: float, game: str = K.GAME_VERSION) -> float:
     """state_infamy_value for one formula state, root = holder."""
-    return component_breakdown(c, holder_type, unrec_mult)["value"]
+    return component_breakdown(c, holder_type, unrec_mult, game)["value"]
 
 # append to tools/hsi/formula.py
 
@@ -124,10 +133,10 @@ def rank_mult(holder_rank: str, target_rank: str) -> float:
     not x1.44), applied as its own multiplication after the general modifier (Mascara: x0.95 then x0.80, not x0.75)."""
     return 1.0 + K.RANK_SCALING[holder_rank][0] + K.RANK_SCALING[target_rank][1]
 
-def raw_goal_value(g: GoalInputs) -> float:
+def raw_goal_value(g: GoalInputs, game: str = K.GAME_VERSION) -> float:
     """The war goal's scripted `infamy` value: sum of state values, subject multipliers inside."""
     spec = GOALS[g.wargoal]
-    raw = sum(component_value(c, g.holder_type, g.unrec_mult) for c in g.components)
+    raw = sum(component_value(c, g.holder_type, g.unrec_mult, game) for c in g.components)
     if spec.subject_blocks:
         if g.loyal_subject:
             raw *= K.SUBJECT_MULT
@@ -169,10 +178,10 @@ def stage_values(raw: float, spec: GoalSpec, general_mult: float, rule_mult: flo
         out[st] = v
     return out
 
-def nominal_charge(g: GoalInputs, rule_key: str, order=ORDER) -> float:
+def nominal_charge(g: GoalInputs, rule_key: str, order=ORDER, game: str = K.GAME_VERSION) -> float:
     """A_r(g): the finished charge for one goal under one rule setting (spec §7, rank block added 2026-10-14)."""
     spec = GOALS[g.wargoal]
-    vals = stage_values(raw_goal_value(g), spec, g.general_mult, K.RULE_MULT[rule_key], order, rank_mult(g.holder_rank, g.target_rank))
+    vals = stage_values(raw_goal_value(g, game), spec, g.general_mult, K.RULE_MULT[rule_key], order, rank_mult(g.holder_rank, g.target_rank))
     return vals[order[-1]]
 
 def truncate1(value: float) -> float:

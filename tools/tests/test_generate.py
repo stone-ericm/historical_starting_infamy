@@ -59,10 +59,11 @@ def test_diagnostic_check_runs_on_every_sample_and_uses_the_record_operands(tmp_
 def expected_standard_egy():
     """Hand derivation from the synthetic day-one sample (make_probe_log: pop 1.9+0.1i, gdp 1.1+0.05i, i = slice index)
     and the fixture ledger; ranks EGY unrecognized major (+0.50 as aggressor), TUR major (+0.10 as target), the pending
-    goal's absent target falls back to unrecognized_power (-0.50)."""
-    aleppo = (5 + 1.9 + 1.10) * 1.5 * 0.85 * 0.9          # homeland standing, shared language, adjacent; EGY is unrecognized: no unrec factor
-    syria = (5 + 2.0 + 1.15) * 1.0 * 0.85 * 0.9           # incorporated standing
-    hedjaz = (5 + 2.3 + 1.30) * 2.0 * 0.85 * 0.9          # capital standing
+    goal's absent target falls back to unrecognized_power (-0.50). Priced with the 1.15 base: max(pop, 1) + max(gdp, 1),
+    every fixture share is >= 1 so the floor does not bind (1.14.5 added a flat 5)."""
+    aleppo = (1.9 + 1.10) * 1.5 * 0.85 * 0.9              # homeland standing, shared language, adjacent; EGY is unrecognized: no unrec factor
+    syria = (2.0 + 1.15) * 1.0 * 0.85 * 0.9               # incorporated standing
+    hedjaz = (2.3 + 1.30) * 2.0 * 0.85 * 0.9              # capital standing
     k_vs_tur = 1 + 0.5 + 0.1
     k_vs_absent = 1 + 0.5 - 0.5
     c_aleppo = aleppo * 1.0 * 0.95 * k_vs_tur             # conquer_state: severity 1, no clamp, general -5 %, rank block, rule 1
@@ -78,8 +79,8 @@ def test_compute_tables_hand_checked_whole_numbers(tmp_path):
     led = load_ledger(repo / "research")
     tables, rows = generate.compute_tables(led, snapshot(m))
     finished, (c_aleppo, c_syria, c_pending) = expected_standard_egy()
-    assert finished == pytest.approx(8.421, abs=0.01)
-    assert tables["standard"] == {"EGY": 8}
+    assert finished == pytest.approx(1.781, abs=0.01)
+    assert tables["standard"] == {"EGY": 2}
     charges = {r["goal_id"]: r for r in rows if r["kind"] == "charge" and r["rule"] == "standard"}
     assert charges["g_aleppo"]["value"] == pytest.approx(c_aleppo) and charges["g_syria"]["value"] == pytest.approx(c_syria)
     assert charges["g_pending"]["value"] == pytest.approx(c_pending)
@@ -87,11 +88,11 @@ def test_compute_tables_hand_checked_whole_numbers(tmp_path):
     assert charges["g_pending"]["target_rank"] == "unrecognized_power"            # absent target: declared fallback
     assert charges["g_aleppo"]["after_K"] == pytest.approx(charges["g_aleppo"]["after_G"] * 1.6)
     # the other rules scale every charge; the floor of 1 and the decay are the only non-linearities
-    assert tables["very_low"] == {"EGY": 2} and tables["low"] == {"EGY": 4}
-    assert tables["high"] == {"EGY": 16} and tables["very_high"] == {"EGY": 23}
+    assert tables["very_low"] == {} and tables["low"] == {"EGY": 1}              # very low finishes at 0.47: below the 0.5 emission line
+    assert tables["high"] == {"EGY": 2} and tables["very_high"] == {"EGY": 3}
     comps = [r for r in rows if r["kind"] == "component" and r["goal_id"] == "g_greece"]
     assert [c["component_id"] for c in comps] == ["c1", "c2"] and comps[0]["slices"] == "STATE_ATTICA/GRE"
-    assert comps[0]["base"] == pytest.approx(5 + 2.1 + 1.2) and comps[0]["value"] == pytest.approx(8.3)
+    assert comps[0]["base"] == pytest.approx(2.1 + 1.2) and comps[0]["value"] == pytest.approx(3.3)
     assert sum(c["value"] for c in comps) == pytest.approx(charges["g_greece"]["component_subtotal"])
     assert charges["g_greece"]["raw"] == pytest.approx(charges["g_greece"]["component_subtotal"] * charges["g_greece"]["subject_mult"])
     assert charges["g_aleppo"]["holder_rank_source"] == "measured" and charges["g_aleppo"]["target_rank_source"] == "measured"
@@ -112,7 +113,7 @@ def test_present_but_unmeasured_target_is_labelled_not_called_absent(tmp_path):
     led = load_ledger(repo / "research")
     assert generate.rank_sources(led.goals["g_pending"], led, snapshot(m)) == ("measured", "fallback-unmeasured")
     tables, rows = generate.compute_tables(led, snapshot(m))
-    assert tables["standard"] == {"EGY": 8}                                      # same fallback rank, same number, labelled honestly
+    assert tables["standard"] == {"EGY": 2}                                      # same fallback rank, same number, labelled honestly
 
 def test_emission_thresholds_and_rounds_to_whole_numbers():
     assert generate.emitted_value("EGY", 0.49) is None
@@ -144,9 +145,9 @@ def test_main_end_to_end_writes_outputs(tmp_path):
     assert "vanilla/common/country_ranks/00_country_ranks.txt" in header
     assert "generator/generate.py" in header and "measurement/debug.log" in header and header["order"] == "SCGKRF"
     tables = json.loads((repo / "research" / "tables.json").read_text())
-    assert tables["standard"]["EGY"] == 8
+    assert tables["standard"]["EGY"] == 2
     readme = (repo / "README.md").read_text()
-    assert "| EGY | 2 | 4 | 8 | 16 | 23 |" in readme and "old" not in readme
+    assert "| EGY | 0 | 1 | 2 | 2 | 3 |" in readme and "old" not in readme
     deriv = (repo / "research" / "derivation.csv").read_text()
     assert "after_K" in deriv.splitlines()[0] and "unrecognized_major_power" in deriv and ",component," in deriv
 
