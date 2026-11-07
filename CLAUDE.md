@@ -1,6 +1,6 @@
 # Historical Starting Infamy — working notes
 
-Standalone Victoria 3 **1.14.5** vanilla mod (not part of EoR). The repository lives in `~/projects/historical_starting_infamy` (moved out of the
+Standalone Victoria 3 vanilla mod (not part of EoR): v0.2.0 is priced for **1.15** (2026-11-06), v0.1.0 was 1.14.5. The repository lives in `~/projects/historical_starting_infamy` (moved out of the
 launcher's mod folder on 2026-10-14: the Paradox launcher scans every folder under `mod/` and its SQLite pool times out on a git repository there,
 which empties its Upload dialog); what the game loads is the release folder `tools/build_release.sh` builds into
 `~/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release/` (with the `.mod` descriptor the launcher needs). Read `ARCHITECTURE.md`, then the spec
@@ -37,6 +37,13 @@ AI attribution trailers (his rule for public GitHub posts). The Steam Workshop i
 - Every game boot backs up and restores Eric's `~/Documents/Paradox Interactive/Victoria 3/content_load.json`; use the scripts, never hand-edit it.
 - `research/measurement/<date>-run-<id>/` is a collected boot; the generated header hashes the logs it read. Acceptance evidence goes to `research/acceptance/<date>/`. Saves are gitignored (hashes committed).
 - Bolivia is computed, never emitted. No Workshop or Paradox Mods publication without Eric's explicit approval.
+
+## On a game patch (done for 1.15 on 2026-11-06)
+
+- Diff every vanilla file the effect header hashes (`# HSI-HASH vanilla/...`) between the old and new trees, re-read each constant in `tools/hsi/constants.py` by define NAME (line numbers move), and diff `00_infamy_values.txt`.
+- A formula change becomes a new variant in `formula.state_base` (`K.GAMES`), with `K.GAME_VERSION` the priced game. Oracle A keeps checking the replica against the measurement boot with `K.MEASUREMENT_GAME` (1.14.5): never re-point it at a game the boot did not run.
+- Rerun `research/scripts/author_ledger.py` against the new game: the CSVs must come out byte-identical, or the history change touches the ledger.
+- `test_capture_audit.py` audits the 1.14.5 capture plan against the archived 1.14.5 tree (`HSI_MEASUREMENT_GAME_DIR`); 1.15 moved Russian ownership, which the plan does not follow.
 
 ## Gotchas
 

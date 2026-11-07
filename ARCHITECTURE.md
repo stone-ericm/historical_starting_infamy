@@ -1,6 +1,6 @@
 # Architecture
 
-**Purpose.** Give each 1836 country the infamy its 1816–1835 conduct would generate under the vanilla 1.14.5 formula, replayed as one decaying balance per country and read at the start of 1836-01-01 (spec v3.1 + the v4 addendum of 2026-10-14: the game's own day-one inputs, the observed stage order with the rank block, whole-number output). A defensible estimate, every approximation declared in the README.
+**Purpose.** Give each 1836 country the infamy its 1816–1835 conduct would generate under the vanilla formula (1.15 since v0.2.0; v0.1.0 used 1.14.5), replayed as one decaying balance per country and read at the start of 1836-01-01 (spec v3.1 + the v4 addendum of 2026-10-14: the game's own day-one inputs, the observed stage order with the rank block, whole-number output). A defensible estimate, every approximation declared in the README.
 
 ## Data flow
 
@@ -16,7 +16,7 @@ tools/hsi/probe_gen.py  (from the ledger + config) -> research/probe/   throwawa
 
 research/measurement/2026-10-14-run-*/   two boots: attempt 1 (captures, engine facts), boot 2 (the measurement)
 
-tools/hsi/formula.py    component value (00_infamy_values.txt replica, engine-verified), goal raw value, stages S,C,G,K,R,F in the observed order (K = rank block), nominal charge per rule
+tools/hsi/formula.py    component value (00_infamy_values.txt replica, engine-verified on 1.14.5; `game` selects the 1.14.5 or 1.15 state base), goal raw value, stages S,C,G,K,R,F in the observed order (K = rank block), nominal charge per rule
 tools/hsi/timeline.py   one balance per country: decay 5/365.25 per day, clamp [0,1000], canonical same-day order, horizon
 tools/hsi/generate.py   oracle A (every DIAG record) -> day-one snapshot (start_b) -> five whole-number tables -> common/scripted_effects/zz_hsi_effects.txt,
                          research/tables.json, research/derivation.csv (stage values per goal), README table; header binds every input hash (tools/hsi/hashes.py)
@@ -35,3 +35,5 @@ tools/hsi/savecheck.py  structural plaintext-save reader; acceptance comparison 
 **Release:** `tools/build_release.sh` copies only what the game loads (`.metadata/`, `common/`, README) plus `thumbnail.png` into `~/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release/` and writes the `.mod` descriptor beside it; the launcher's Upload mod dialog publishes from that folder, and a re-upload from it updates the same Workshop item. `.metadata/metadata.json` carries the Workshop id. Listing text is in `docs/release/` (Markdown and Steam markup). The development repository lives at `~/projects/historical_starting_infamy`, outside the game's `mod/` folder, because the launcher scans every folder there and large trees make its database time out.
 
 **Status 2026-10-14 night:** v0.1.0 on `main`. Measured by two probe boots, simplified per the v4 addendum, generated (Egypt 54, Punjab 11 at Standard), smoke-accepted on a Standard start (Egypt Notorious, Punjab 11.0, no new errors). The save-based acceptance was waived by the owner and the waiver is recorded in `research/acceptance/ACCEPTANCE.md`; four Codex review rounds are archived in `docs/reviews/`. Published on the Steam Workshop (item 3819895927) and on GitHub (https://github.com/stone-ericm/historical_starting_infamy, history squashed at publication).
+
+**Status 2026-11-06:** v0.2.0 on branch `v0.2-game-1.15`: repriced for 1.15, whose only formula change for this mod is the per-state baseline (flat 5 added -> floor of 1 under each share). Egypt 12, Punjab 2 at Standard. Oracle A still checks every 1.14.5 DIAG record with the 1.14.5 variant; the 1.15 population/GDP shares are the 1.14.5 measurement's (declared in the README).
