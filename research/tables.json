@@ -1,17 +1,17 @@
 {
   "high": {
-    "EGY": 20,
+    "EGY": 19,
     "PAN": 4
   },
   "low": {
-    "EGY": 4
+    "EGY": 3
   },
   "standard": {
-    "EGY": 12,
+    "EGY": 11,
     "PAN": 2
   },
   "very_high": {
-    "EGY": 28,
+    "EGY": 27,
     "PAN": 7
   },
   "very_low": {}
