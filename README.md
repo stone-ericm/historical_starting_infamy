@@ -13,7 +13,7 @@ A Victoria 3 (1.15) mod, on the Steam Workshop as [item 3819895927](https://stea
 | PAN | 0 | 0 | 2 | 4 | 7 |
 <!-- hsi:table:end -->
 
-The values are applied by the after-lobby new-campaign hook, guarded by a global flag so a reload cannot apply them twice, and scaled by the Infamy Generation game rule. Measured for v0.1.0 on 1.14.5: a Standard-rule start showed Egypt in the Notorious band and Punjab at 11.0, with no new script errors. v0.2.0 on 1.15: the measurement boot is done (below); the delivery smoke check is not yet. Not measured for this release (waived by the author): the Very Low start, a reload of a saved game, and enabling the mod on an existing save, which the guard is designed to leave unchanged.
+The values are applied by the after-lobby new-campaign hook, guarded by a global flag so a reload cannot apply them twice, and scaled by the Infamy Generation game rule. Measured for v0.1.0 on 1.14.5: a Standard-rule start showed Egypt in the Notorious band and Punjab at 11.0, with no new script errors. v0.2.0 on 1.15: a Standard-rule start shows Egypt at exactly 11.0, with no new script errors (`research/acceptance/2026-11-07-run-20261107-123722-87747/`). Not measured for this release (waived by the author): the Very Low start, a reload of a saved game, and enabling the mod on an existing save, which the guard is designed to leave unchanged.
 
 ## How the numbers were derived
 
