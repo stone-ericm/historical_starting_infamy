@@ -9,3 +9,5 @@ Verdict: no BLOCKER, no MAJOR. Tables reproduce byte for byte; the 1.15 formula 
 | R3 MINOR: factor tests only ran under 1.14.5; a 1.15-only break passed 139 tests | Fixed in 67b80fe: factor/precedence tests parametrized over both games; the reviewer's mutant now fails. |
 | Note: `build_release.sh` thumbnail is the 1.14.5 "Notorious" screenshot | Open: replace with the 1.15 acceptance screenshot before uploading (Egypt at 12 is no longer Notorious). |
 | Sensitivity: a fresh 1.15 measurement could move a rounded value | Accepted as a declared approximation (owner chose option A, 2026-11-06); a probe boot is the check if wanted. |
+
+**Update 2026-11-07:** the sensitivity row is closed by a 1.15 probe boot (`research/measurement/2026-11-07-run-20261107-121915-79721/`): Egypt measured 11 (one below the reused-input draft at every rule), Punjab unchanged; the 1.15 formula is engine-checked (1,752 records).
