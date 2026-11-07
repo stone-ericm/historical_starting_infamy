@@ -11,7 +11,7 @@ from hsi.measurement import extract, session_logs, parse_lines, start_snapshot
 from hsi import generate
 
 REPO = Path(__file__).resolve().parents[2]
-BOOT = REPO / "research/measurement/2026-10-14-run-20261014-150956-73604"
+BOOT = REPO / "research/measurement/2026-11-07-run-20261107-121915-79721/session-2"   # the 1.15 measurement (v0.2.0)
 GAME = Path(os.environ.get("HSI_GAME_DIR", Path.home() / "Library/Application Support/Steam/steamapps/common/Victoria 3/game"))
 
 def test_on_action_registration_is_additive_and_calls_the_effect():

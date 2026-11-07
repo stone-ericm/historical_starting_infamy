@@ -20,8 +20,7 @@ def load_audit():
 @pytest.fixture(scope="module")
 def vanilla():
     mod = load_audit()
-    from hsi import constants as K
-    return mod, mod.Vanilla(GAME, K.MEASUREMENT_GAME)   # the plan's boot ran 1.14.5: tree AND arithmetic (review v02-r1 R2)
+    return mod, mod.Vanilla(GAME, "1.14.5")   # the 2026-10-14 plan's boot ran 1.14.5: tree AND arithmetic (review v02-r1 R2)
 
 def test_the_superseded_plan_is_rejected(vanilla):
     mod, V = vanilla
@@ -81,5 +80,18 @@ def test_fixture_slices_cover_every_candidate(vanilla):
             if cap["wargoal"] in ("make_protectorate", "regime_change"):
                 for sk, _ in V.owned_slices(cand["target"]):
                     assert (sk, cand["target"]) in slices, (cap["id"], cand["target"], sk)
+
+
+INSTALLED = Path(os.environ.get("HSI_GAME_DIR", Path.home() / "Library/Application Support/Steam/steamapps/common/Victoria 3/game"))
+
+@pytest.mark.skipif(not (INSTALLED / "common/history/states/00_states.txt").exists(), reason="installed game not present")
+def test_probe_config_matches_the_installed_game():
+    # the committed probe is for the next boot, i.e. the installed game (1.15 since 2026-11-07), not the 1.14.5 plan above
+    from hsi import constants as K
+    mod = load_audit()
+    V = mod.Vanilla(INSTALLED, K.GAME_VERSION)
+    plan = json.loads((REPO / "research/measurement/capture-plan.json").read_text(encoding="utf-8"))
+    slices = set(map(tuple, mod.fixture_slices(plan, V)))
+    assert not any(owner == "RUS" and sk not in {"STATE_LITHUANIA", "STATE_VILNIUS"} for sk, owner in slices)   # 1.15 renamed Kaunas
     cfg = json.loads((REPO / "research/probe/config.json").read_text(encoding="utf-8"))
     assert set(map(tuple, cfg["fixture_slices"])) == slices, "research/probe/config.json is stale: rerun capture_audit.py --write-config"
