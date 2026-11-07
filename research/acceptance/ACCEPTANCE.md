@@ -11,7 +11,7 @@ your playset up into a run receipt and restores it on exit, exactly as the probe
    HSI_MOD_PATH="$HOME/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release" bash research/measurement/boot_probe.sh
    ```
 2. New Game. Pick any country (France is fine). Leave the Infamy Generation rule at its default (Standard). Start.
-3. Stay paused. Open Egypt's country panel: it should show 54 infamy. Open Punjab (the Sikh Empire): 11. Any other
+3. Stay paused. Open Egypt's country panel: it should show 12 infamy (v0.2.0 on 1.15; v0.1.0 on 1.14.5 showed 54). Open Punjab (the Sikh Empire): 2 (was 11). Any other
    country: 0, except Bolivia at vanilla's 50. Screenshot Egypt's infamy tooltip.
 4. Still paused: Save Game as `hsi_accept_std_1836_01_01`. Quit to desktop. The boot window restores your playset.
 5. Tell Claude. Claude collects (`research/measurement/collect_evidence.sh ~/Desktop`), copies the save into
@@ -21,7 +21,7 @@ your playset up into a run receipt and restores it on exit, exactly as the probe
    once) and diffs `error.log` against the probe boots.
 
 Spec v3.1 section 9 keeps these as acceptance (the v4 addendum did not drop them): a Very Low boot the same way
-(Egypt 16, Punjab 1; save as `hsi_accept_vlow_1836_01_01`) and the lifecycle checks (Load Game `hsi_accept_std…` →
+(v0.2.0: nobody at Very Low; v0.1.0 had Egypt 16, Punjab 1; save as `hsi_accept_vlow_1836_01_01`) and the lifecycle checks (Load Game `hsi_accept_std…` →
 stay paused → Save As `hsi_reload_1836_01_01`; then load any older vanilla save with the mod on, stay paused, save as
 `hsi_lateenable_check`). The 2026-10-14 Standard boot without a save is a smoke check, recorded as such in its
 notes. **Waived by Eric on 2026-10-14 ("waive"):** the save-based checks (exact values, roster at zero, Bolivia 50, guard once, reload, late-enable, Very Low) are not required for v1; the smoke check stands as the acceptance record.
