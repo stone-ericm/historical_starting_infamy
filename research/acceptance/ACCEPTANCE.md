@@ -27,3 +27,5 @@ Spec v3.1 section 9 keeps these as acceptance (the v4 addendum did not drop them
 stay paused → Save As `hsi_reload_1836_01_01`; then load any older vanilla save with the mod on, stay paused, save as
 `hsi_lateenable_check`). The 2026-10-14 Standard boot without a save is a smoke check, recorded as such in its
 notes. **Waived by Eric on 2026-10-14 ("waive"):** the save-based checks (exact values, roster at zero, Bolivia 50, guard once, reload, late-enable, Very Low) are not required for v1; the smoke check stands as the acceptance record.
+
+**v0.2.0 on 1.15 (2026-11-07):** Standard smoke check passed, Egypt exactly 11.0, 0 new error messages: `research/acceptance/2026-11-07-run-20261107-123722-87747/acceptance-notes.md`. The v1 waiver of the save-based checks still applies.

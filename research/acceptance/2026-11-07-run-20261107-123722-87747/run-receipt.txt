@@ -1,0 +1,8 @@
+run_id: 20261107-123722-87747
+started: 2026-11-07 12:37:22 EST
+playset_dir: /Users/eric/Documents/Paradox Interactive/Victoria 3
+mod_source: /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release
+enabled_mod: /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/historical_starting_infamy_release
+staged_tree_sha256: 384a7e112046ac4d06847421ee8c06d6484c89069ff748231f3f26bdd9275d78
+binary: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/binaries/victoria3.app/Contents/MacOS/victoria3
+restored: 2026-11-07 12:39:24 EST (content_load.json f7dbe205bc278e299b17fcc5230438df9bea1ed4686250b4f06d733e324738fa -> 9a9819305f351b6832d780bac6d7174203ecc467cd1df1328081fd2d1455edfe, verified)

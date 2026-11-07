@@ -7,7 +7,7 @@ set -euo pipefail
 R="$(cd "$(dirname "$0")/.." && pwd)"
 V3="${HSI_V3_DIR:-$HOME/Documents/Paradox Interactive/Victoria 3}"
 OUT="${HSI_RELEASE_DIR:-$V3/mod/historical_starting_infamy_release}"
-SHOT="$R/research/acceptance/2026-10-14-run-20261014-153134-83398/acceptance-egypt-notorious.jpg"
+SHOT="$R/research/acceptance/2026-11-07-run-20261107-123722-87747/acceptance-egypt-11.png"
 if [ -d "$OUT" ]; then
   if [ -f "$OUT/.metadata/metadata.json" ]; then
     # keep a Workshop id the launcher may have written back on a previous upload
@@ -28,10 +28,12 @@ json.dump(d, open(p, "w"), indent=2); open(p, "a").write("\n")
 PY
   echo "kept Workshop id $PREV_ID from the previous release folder"
 fi
-# thumbnail: the Egypt "Notorious" panel from the acceptance screenshot, square, 512 px
+# thumbnail: Egypt's infamy tooltip from the 1.15 acceptance boot (11.0), padded to a square on the tooltip's dark
+# background (cropping would cut the text), 512 px
 if [ -f "$SHOT" ]; then
-  sips -s format png -c 1040 1040 --cropOffset 20 20 "$SHOT" --out "$OUT/.metadata/thumbnail.png" >/dev/null 2>&1 \
-    || sips -s format png -c 1040 1040 "$SHOT" --out "$OUT/.metadata/thumbnail.png" >/dev/null
+  W="$(sips -g pixelWidth "$SHOT" | awk '/pixelWidth/ {print $2}')"; H="$(sips -g pixelHeight "$SHOT" | awk '/pixelHeight/ {print $2}')"
+  S=$(( W > H ? W : H ))
+  sips -s format png --padToHeightWidth "$S" "$S" --padColor 2A2320 "$SHOT" --out "$OUT/.metadata/thumbnail.png" >/dev/null
   sips -z 512 512 "$OUT/.metadata/thumbnail.png" >/dev/null
 fi
 # the same static checks the repo gets: BOM and braces on every script file, known rule flags

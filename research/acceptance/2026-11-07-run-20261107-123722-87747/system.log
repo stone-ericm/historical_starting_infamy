@@ -1,0 +1,17 @@
+[12:37:23][game_setup.cpp:225]: Exe Git Version: release/1.15.0 : 633854798
+[12:37:23][game_setup.cpp:226]: Build Timestamp: 2026-11-03 16:16:50 +0000 long hash: 6338547985dbc271523e149f362a6fd93dc62975
+[12:37:23][systemsettings.cpp:205]: CPU Model: Apple M4 Pro
+[12:37:23][systemsettings.cpp:206]: CPU Speed: 2400MHz
+[12:37:23][systemsettings.cpp:207]: CPU Physical Cores: 14
+[12:37:23][systemsettings.cpp:208]: CPU Logical Cores: 14
+[12:37:23][systemsettings.cpp:209]: RAM Total: 24576
+[12:37:23][systemsettings.cpp:210]: RAM Free: 4721
+[12:37:23][systemsettings.cpp:211]: Swap Total: 8192
+[12:37:23][systemsettings.cpp:212]: Swap Free: 1712
+[12:37:23][systemsettings.cpp:213]: OS Version: OSX Version 27.3 (Build 26C5035r)
+[12:37:23][systemsettings.cpp:214]: OS Language: en_US
+[12:37:24][contextowner.cpp:870]: GPU Name: Apple M4 Pro
+[12:37:24][contextowner.cpp:871]: GPU Vendor: Apple
+[12:37:24][contextowner.cpp:872]: GPU Id: 453181961
+[12:37:24][contextowner.cpp:873]: GPU Dedicated Memory: 0
+[12:37:30][gameapplication.cpp:1387]: Loading cursors...
