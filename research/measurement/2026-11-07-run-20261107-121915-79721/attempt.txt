@@ -1,0 +1,12 @@
+run_id: 20261107-121915-79721
+receipt: /Users/eric/projects/historical_starting_infamy/research/measurement/.run/20261107-121915-79721-81512
+collected: 2026-11-07 12:28:24 EST
+logs:
+  debug.1.log
+  debug.2.log
+  debug.3.log
+  debug.log
+  error.1.log
+  error.log
+  game.log
+  system.log

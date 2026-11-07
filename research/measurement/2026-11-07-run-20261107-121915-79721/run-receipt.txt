@@ -1,0 +1,10 @@
+run_id: 20261107-121915-79721
+started: 2026-11-07 12:19:15 EST
+playset_dir: /Users/eric/Documents/Paradox Interactive/Victoria 3
+mod_source: /Users/eric/projects/historical_starting_infamy/research/probe
+enabled_mod: /Users/eric/Documents/Paradox Interactive/Victoria 3/mod/hsi_probe
+staged_tree_sha256: 77a8aef8015b7cb39c0a3e10270b9b38a9a0fd78383f9b33a1786b5f96602234
+binary: /Users/eric/Library/Application Support/Steam/steamapps/common/Victoria 3/binaries/victoria3.app/Contents/MacOS/victoria3
+checkpoint: 2026-11-07 12:24:41 EST, 4 log file(s)
+checkpoint: 2026-11-07 12:25:45 EST, 4 log file(s)
+restored: 2026-11-07 12:27:22 EST (content_load.json a0181000df7c5128fda0175ed1bd6e4037c5ac0d37e586c6529c958af9f9509f -> 9a9819305f351b6832d780bac6d7174203ecc467cd1df1328081fd2d1455edfe, verified)
