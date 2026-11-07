@@ -218,10 +218,6 @@ hsi_probe_start_records_a = {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_a;0;lobby;STATE;STATE_KASHMIR/LAD;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 	}
-	s:STATE_KAUNAS.region_state:RUS ?= {
-		hsi_probe_state_globals = yes
-		debug_log = "HSI;start_a;0;lobby;STATE;STATE_KAUNAS/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
-	}
 	s:STATE_KORDOFAN.region_state:EGY ?= {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_a;0;lobby;STATE;STATE_KORDOFAN/EGY;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
@@ -237,6 +233,10 @@ hsi_probe_start_records_a = {
 	s:STATE_LIMA.region_state:NPU ?= {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_a;0;lobby;STATE;STATE_LIMA/NPU;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
+	}
+	s:STATE_LITHUANIA.region_state:RUS ?= {
+		hsi_probe_state_globals = yes
+		debug_log = "HSI;start_a;0;lobby;STATE;STATE_LITHUANIA/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 	}
 	s:STATE_LOMBARDY.region_state:AUS ?= {
 		hsi_probe_state_globals = yes
@@ -437,6 +437,10 @@ hsi_probe_start_records_a = {
 	c:KAB ?= {
 		hsi_probe_country_globals = yes
 		debug_log = "HSI;start_a;0;lobby;COUNTRY;KAB;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
+	}
+	c:LAD ?= {
+		hsi_probe_country_globals = yes
+		debug_log = "HSI;start_a;0;lobby;COUNTRY;LAD;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
 	}
 	c:LUC ?= {
 		hsi_probe_country_globals = yes
@@ -674,10 +678,6 @@ hsi_probe_start_records_b = {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_b;0;lobby;STATE;STATE_KASHMIR/LAD;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 	}
-	s:STATE_KAUNAS.region_state:RUS ?= {
-		hsi_probe_state_globals = yes
-		debug_log = "HSI;start_b;0;lobby;STATE;STATE_KAUNAS/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
-	}
 	s:STATE_KORDOFAN.region_state:EGY ?= {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_b;0;lobby;STATE;STATE_KORDOFAN/EGY;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
@@ -693,6 +693,10 @@ hsi_probe_start_records_b = {
 	s:STATE_LIMA.region_state:NPU ?= {
 		hsi_probe_state_globals = yes
 		debug_log = "HSI;start_b;0;lobby;STATE;STATE_LIMA/NPU;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
+	}
+	s:STATE_LITHUANIA.region_state:RUS ?= {
+		hsi_probe_state_globals = yes
+		debug_log = "HSI;start_b;0;lobby;STATE;STATE_LITHUANIA/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 	}
 	s:STATE_LOMBARDY.region_state:AUS ?= {
 		hsi_probe_state_globals = yes
@@ -893,6 +897,10 @@ hsi_probe_start_records_b = {
 	c:KAB ?= {
 		hsi_probe_country_globals = yes
 		debug_log = "HSI;start_b;0;lobby;COUNTRY;KAB;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
+	}
+	c:LAD ?= {
+		hsi_probe_country_globals = yes
+		debug_log = "HSI;start_b;0;lobby;COUNTRY;LAD;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
 	}
 	c:LUC ?= {
 		hsi_probe_country_globals = yes
@@ -1137,10 +1145,6 @@ hsi_probe_monthly_records = {
 					hsi_probe_state_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];STATE;STATE_KASHMIR/LAD;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 				}
-				s:STATE_KAUNAS.region_state:RUS ?= {
-					hsi_probe_state_globals = yes
-					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];STATE;STATE_KAUNAS/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
-				}
 				s:STATE_KORDOFAN.region_state:EGY ?= {
 					hsi_probe_state_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];STATE;STATE_KORDOFAN/EGY;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
@@ -1156,6 +1160,10 @@ hsi_probe_monthly_records = {
 				s:STATE_LIMA.region_state:NPU ?= {
 					hsi_probe_state_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];STATE;STATE_LIMA/NPU;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
+				}
+				s:STATE_LITHUANIA.region_state:RUS ?= {
+					hsi_probe_state_globals = yes
+					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];STATE;STATE_LITHUANIA/RUS;owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];pop=[GetGlobalVariable('hsi_g_pop').GetValue|0];gdp=[GetGlobalVariable('hsi_g_gdp').GetValue|2];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4]"
 				}
 				s:STATE_LOMBARDY.region_state:AUS ?= {
 					hsi_probe_state_globals = yes
@@ -1356,6 +1364,10 @@ hsi_probe_monthly_records = {
 				c:KAB ?= {
 					hsi_probe_country_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];COUNTRY;KAB;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
+				}
+				c:LAD ?= {
+					hsi_probe_country_globals = yes
+					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];COUNTRY;LAD;country_type=[GetGlobalVariable('hsi_g_ct').GetValue|0];rank=[GetGlobalVariable('hsi_g_rank').GetValue|0];gen_mult=[GetGlobalVariable('hsi_g_gen').GetValue|4];unrec_mult=[GetGlobalVariable('hsi_g_unrec').GetValue|4];decay_mult=[GetGlobalVariable('hsi_g_decay').GetValue|4];infamy=[GetGlobalVariable('hsi_g_infamy').GetValue|4]"
 				}
 				c:LUC ?= {
 					hsi_probe_country_globals = yes
@@ -2800,13 +2812,6 @@ hsi_probe_monthly_records = {
 					hsi_probe_diag_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];DIAG;FRA/STATE_KASHMIR/LAD;root_tag=FRA;aggressor_homeland=[GetGlobalVariable('hsi_g_d_ah').GetValue|0];homeland_bonus=[GetGlobalVariable('hsi_g_d_ahb').GetValue|0];shared_language=[GetGlobalVariable('hsi_g_d_sl').GetValue|0];language_bonus=[GetGlobalVariable('hsi_g_d_slb').GetValue|0];claim=[GetGlobalVariable('hsi_g_d_cl').GetValue|0];scripted_unification=[GetGlobalVariable('hsi_g_d_su').GetValue|0];adjacent=[GetGlobalVariable('hsi_g_d_adj').GetValue|0];interest_bucket=[GetGlobalVariable('hsi_g_d_int').GetValue|0];root_type=[GetGlobalVariable('hsi_g_d_rt').GetValue|0];owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];unrec_mult=[GetGlobalVariable('hsi_g_root_unrec').GetValue|4];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4];siv=[GetGlobalVariable('hsi_g_siv').GetValue|4]"
 				}
-				s:STATE_KAUNAS.region_state:RUS ?= {
-					save_scope_as = hsi_state
-					region = { save_scope_as = hsi_region }
-					hsi_probe_state_globals = yes
-					hsi_probe_diag_globals = yes
-					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];DIAG;FRA/STATE_KAUNAS/RUS;root_tag=FRA;aggressor_homeland=[GetGlobalVariable('hsi_g_d_ah').GetValue|0];homeland_bonus=[GetGlobalVariable('hsi_g_d_ahb').GetValue|0];shared_language=[GetGlobalVariable('hsi_g_d_sl').GetValue|0];language_bonus=[GetGlobalVariable('hsi_g_d_slb').GetValue|0];claim=[GetGlobalVariable('hsi_g_d_cl').GetValue|0];scripted_unification=[GetGlobalVariable('hsi_g_d_su').GetValue|0];adjacent=[GetGlobalVariable('hsi_g_d_adj').GetValue|0];interest_bucket=[GetGlobalVariable('hsi_g_d_int').GetValue|0];root_type=[GetGlobalVariable('hsi_g_d_rt').GetValue|0];owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];unrec_mult=[GetGlobalVariable('hsi_g_root_unrec').GetValue|4];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4];siv=[GetGlobalVariable('hsi_g_siv').GetValue|4]"
-				}
 				s:STATE_KORDOFAN.region_state:EGY ?= {
 					save_scope_as = hsi_state
 					region = { save_scope_as = hsi_region }
@@ -2834,6 +2839,13 @@ hsi_probe_monthly_records = {
 					hsi_probe_state_globals = yes
 					hsi_probe_diag_globals = yes
 					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];DIAG;FRA/STATE_LIMA/NPU;root_tag=FRA;aggressor_homeland=[GetGlobalVariable('hsi_g_d_ah').GetValue|0];homeland_bonus=[GetGlobalVariable('hsi_g_d_ahb').GetValue|0];shared_language=[GetGlobalVariable('hsi_g_d_sl').GetValue|0];language_bonus=[GetGlobalVariable('hsi_g_d_slb').GetValue|0];claim=[GetGlobalVariable('hsi_g_d_cl').GetValue|0];scripted_unification=[GetGlobalVariable('hsi_g_d_su').GetValue|0];adjacent=[GetGlobalVariable('hsi_g_d_adj').GetValue|0];interest_bucket=[GetGlobalVariable('hsi_g_d_int').GetValue|0];root_type=[GetGlobalVariable('hsi_g_d_rt').GetValue|0];owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];unrec_mult=[GetGlobalVariable('hsi_g_root_unrec').GetValue|4];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4];siv=[GetGlobalVariable('hsi_g_siv').GetValue|4]"
+				}
+				s:STATE_LITHUANIA.region_state:RUS ?= {
+					save_scope_as = hsi_state
+					region = { save_scope_as = hsi_region }
+					hsi_probe_state_globals = yes
+					hsi_probe_diag_globals = yes
+					debug_log = "HSI;monthly;[GetGlobalVariable('hsi_g_sample').GetValue|0];[TimeKeeper.GetCurrentDate.GetString];DIAG;FRA/STATE_LITHUANIA/RUS;root_tag=FRA;aggressor_homeland=[GetGlobalVariable('hsi_g_d_ah').GetValue|0];homeland_bonus=[GetGlobalVariable('hsi_g_d_ahb').GetValue|0];shared_language=[GetGlobalVariable('hsi_g_d_sl').GetValue|0];language_bonus=[GetGlobalVariable('hsi_g_d_slb').GetValue|0];claim=[GetGlobalVariable('hsi_g_d_cl').GetValue|0];scripted_unification=[GetGlobalVariable('hsi_g_d_su').GetValue|0];adjacent=[GetGlobalVariable('hsi_g_d_adj').GetValue|0];interest_bucket=[GetGlobalVariable('hsi_g_d_int').GetValue|0];root_type=[GetGlobalVariable('hsi_g_d_rt').GetValue|0];owner_type=[GetGlobalVariable('hsi_g_ot').GetValue|0];unrec_mult=[GetGlobalVariable('hsi_g_root_unrec').GetValue|4];pop_share_uncapped=[GetGlobalVariable('hsi_g_pshare').GetValue|4];gdp_share_uncapped=[GetGlobalVariable('hsi_g_gshare').GetValue|4];incorporated=[GetGlobalVariable('hsi_g_inc').GetValue|0];capital=[GetGlobalVariable('hsi_g_cap').GetValue|0];owner_homeland=[GetGlobalVariable('hsi_g_oh').GetValue|0];base=[GetGlobalVariable('hsi_g_base').GetValue|4];siv=[GetGlobalVariable('hsi_g_siv').GetValue|4]"
 				}
 				s:STATE_LOMBARDY.region_state:AUS ?= {
 					save_scope_as = hsi_state
